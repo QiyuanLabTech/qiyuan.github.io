@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>启元脑芯片实验室</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../src/css/index.css">
+<link rel="stylesheet" href="../src/css/global.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="../src/js/tailwind-config.js">
+</script>
+</head>
+<body class="bg-white">
+<!-- Header -->
+<header id="header" class="fixed top-0 left-0 w-full bg-transparent transition-all duration-300 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-[80px]">
+<div class="flex-shrink-0">
+<a href="#" class="font-['Pacifico'] text-2xl text-primary transition-colors duration-300">logo</a>
+</div>
+<div class="hidden md:flex space-x-8">
+<a href="../src/news.html" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">新闻</a>
+<a href="../proceedings/index.html" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">论文集</a>
+<a href="../TeamMember/index.html" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">成员</a>
+<a href="../collaboration/index.html" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">合作</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="!rounded-button p-2 hover:bg-white/10">
+<i class="fas fa-search text-white transition-colors duration-300"></i>
+</button>
+<button class="!rounded-button p-2 hover:bg-white/10">
+<i class="fas fa-user text-white transition-colors duration-300"></i>
+</button>
+<button class="md:hidden !rounded-button p-2 hover:bg-white/10">
+<i class="fas fa-bars text-white transition-colors duration-300"></i>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative h-screen overflow-hidden" style="background-image: url('https://ai-public.mastergo.com/ai/img_res/0ea099e28964e72cf3bd6d88fdec35d7.jpg'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-black bg-opacity-50"></div>
+<div class="relative max-w-7xl mx-auto px-4 h-full flex items-center">
+<div class="hero-text text-white max-w-3xl">
+<h1 class="text-5xl font-bold mb-6">我们正在进行以脑为基础的计算领域的开创性研究。</h1>
+<p class="text-xl mb-8">通过创新的芯片设计和神经架构研究来拓展神经形态工程和人工智能的前沿领域。</p>
+</div>
+</div>
+</section>
+<!-- Main Content -->
+<main class="max-w-7xl mx-auto px-4 py-16">
+<!-- Research Areas -->
+<!-- <section class="mb-20">
+<h2 class="text-3xl font-bold mb-12 text-center">新闻</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+<div class="relative h-64 overflow-hidden">
+<img src="https://ai-public.mastergo.com/ai/img_res/b63c94c2304438b10575398332478db8.jpg" alt="Neural Architecture" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 group-hover:brightness-75">
+</div>
+<div class="relative">
+<div class="absolute top-0 left-0 right-0 h-[10px] bg-transparent group-hover:bg-primary transition-colors duration-300"></div>
+<div class="p-6 group-hover:bg-primary/5 transition-colors duration-300">
+<h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">Neural Architecture Design</h3>
+<p class="text-gray-600 group-hover:text-gray-700">Developing innovative neural network architectures optimized for brain-inspired computing systems.</p>
+</div>
+</div>
+</div>
+<div class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+<div class="relative h-64 overflow-hidden">
+<img src="https://ai-public.mastergo.com/ai/img_res/3116108bf86bb20cc597c32c86db1754.jpg" alt="Chip Design" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 group-hover:brightness-75">
+</div>
+<div class="relative">
+<div class="absolute top-0 left-0 right-0 h-[10px] bg-transparent group-hover:bg-primary transition-colors duration-300"></div>
+<div class="p-6 group-hover:bg-primary/5 transition-colors duration-300">
+<h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">Neuromorphic Chip Design</h3>
+<p class="text-gray-600 group-hover:text-gray-700">Creating next-generation hardware platforms that mimic biological neural systems.</p>
+</div>
+</div>
+</div>
+<div class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+<div class="relative h-64 overflow-hidden">
+<img src="https://ai-public.mastergo.com/ai/img_res/8bd721179ea0498f288cb77537e181d6.jpg" alt="Algorithm Development" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 group-hover:brightness-75">
+</div>
+<div class="relative">
+<div class="absolute top-0 left-0 right-0 h-[10px] bg-transparent group-hover:bg-primary transition-colors duration-300"></div>
+<div class="p-6 group-hover:bg-primary/5 transition-colors duration-300">
+<h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">Algorithm Development</h3>
+<p class="text-gray-600 group-hover:text-gray-700">Advancing machine learning algorithms optimized for neuromorphic hardware implementation.</p>
+</div>
+</div>
+</div>
+</div>
+</section> -->
+<!-- Projects Section -->
+<section class="mb-20">
+<h2 class="text-3xl font-bold mb-12 text-center">新闻</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+<div class="relative h-48 overflow-hidden">
+<img src="https://ai-public.mastergo.com/ai/img_res/6bdc49d0268ee8c0d7b5351ff24c9305.jpg"
+alt="Project 1"
+class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 group-hover:brightness-75">
+</div>
+<div class="relative">
+<div class="absolute top-0 left-0 right-0 h-[10px] bg-transparent group-hover:bg-primary transition-colors duration-300"></div>
+<div class="p-6 group-hover:bg-primary/5 transition-colors duration-300">
+<h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">Neural Computing Platform</h3>
+<p class="text-gray-600 group-hover:text-gray-700">Advanced hardware platform for efficient neural network processing and brain-inspired computing.</p>
+</div>
+</div>
+</div>
+<div class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+<div class="relative h-48 overflow-hidden">
+<img src="https://ai-public.mastergo.com/ai/img_res/28e668b3a87625fb06afc486f69e84d6.jpg"
+alt="Project 2"
+class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 group-hover:brightness-75">
+</div>
+<div class="relative">
+<div class="absolute top-0 left-0 right-0 h-[10px] bg-transparent group-hover:bg-primary transition-colors duration-300"></div>
+<div class="p-6 group-hover:bg-primary/5 transition-colors duration-300">
+<h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">Brain-Computer Interface</h3>
+<p class="text-gray-600 group-hover:text-gray-700">Cutting-edge neural interface systems for direct brain-computer communication.</p>
+</div>
+</div>
+</div>
+<div class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+<div class="relative h-48 overflow-hidden">
+<img src="https://ai-public.mastergo.com/ai/img_res/8e9a5671375c0aad3029fddc04199dd3.jpg"
+alt="Project 3"
+class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 group-hover:brightness-75">
+</div>
+<div class="relative">
+<div class="absolute top-0 left-0 right-0 h-[10px] bg-transparent group-hover:bg-primary transition-colors duration-300"></div>
+<div class="p-6 group-hover:bg-primary/5 transition-colors duration-300">
+<h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">AI Algorithm Innovation</h3>
+<p class="text-gray-600 group-hover:text-gray-700">Revolutionary algorithms optimized for next-generation neuromorphic computing systems.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects -->
+<section class="mb-20">
+<h2 class="text-3xl font-bold mb-12 text-center">Featured Projects</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+<img src="https://ai-public.mastergo.com/ai/img_res/891b6e5329dda2c3ceec41453acc6729.jpg" alt="BCI Project" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="absolute bottom-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+<h3 class="text-xl font-bold mb-2">Brain-Computer Interface</h3>
+<p class="text-sm text-gray-200 mb-4">Developing next-generation neural interfaces for direct brain-computer communication</p>
+<button class="!rounded-button bg-primary hover:bg-primary/90 text-white px-4 py-2 text-sm whitespace-nowrap">Learn More</button>
+</div>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+<img src="https://ai-public.mastergo.com/ai/img_res/8780832f55eae4f0c453680d0dfc1624.jpg" alt="Neuromorphic Computing" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="absolute bottom-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+<h3 class="text-xl font-bold mb-2">Neuromorphic Computing</h3>
+<p class="text-sm text-gray-200 mb-4">Creating energy-efficient computing systems inspired by biological neural networks</p>
+<button class="!rounded-button bg-primary hover:bg-primary/90 text-white px-4 py-2 text-sm whitespace-nowrap">Learn More</button>
+</div>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+<img src="https://ai-public.mastergo.com/ai/img_res/c3903b6a2e9885c5443a8698895f7464.jpg" alt="AI Algorithms" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="absolute bottom-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+<h3 class="text-xl font-bold mb-2">AI Algorithm Development</h3>
+<p class="text-sm text-gray-200 mb-4">Advancing machine learning algorithms for neuromorphic computing platforms</p>
+<button class="!rounded-button bg-primary hover:bg-primary/90 text-white px-4 py-2 text-sm whitespace-nowrap">Learn More</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Latest Publications -->
+<section class="mb-20">
+<h2 class="text-3xl font-bold mb-12 text-center">论文集</h2>
+<div class="grid grid-cols-1 gap-8">
+<div class="project-card bg-white rounded-lg shadow-lg p-6">
+<div class="flex items-start">
+<div class="flex-grow">
+<h3 class="text-xl font-bold mb-2">Efficient Neural Architecture Search for Brain-Inspired Computing</h3>
+<p class="text-gray-600 mb-4">Nature Electronics, 2024</p>
+<p class="text-gray-700">A comprehensive study on optimizing neural architectures for neuromorphic hardware implementation, achieving state-of-the-art performance in energy efficiency and processing speed.</p>
+<div class="mt-4 flex flex-wrap gap-2">
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Neural Architecture</span>
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Hardware Optimization</span>
+</div>
+</div>
+</div>
+</div>
+<div class="project-card bg-white rounded-lg shadow-lg p-6">
+<div class="flex items-start">
+<div class="flex-grow">
+<h3 class="text-xl font-bold mb-2">Advanced Synaptic Design for Next-Generation Neuromorphic Computing</h3>
+<p class="text-gray-600 mb-4">Science Advances, 2024</p>
+<p class="text-gray-700">Novel approaches to synaptic element design in neuromorphic chips, demonstrating improved learning capabilities and reduced power consumption.</p>
+<div class="mt-4 flex flex-wrap gap-2">
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Chip Design</span>
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Synaptic Computing</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Research Impact -->
+<!-- <section class="mb-20">
+<h2 class="text-3xl font-bold mb-12 text-center">Research Impact</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="project-card text-center p-6 bg-white rounded-lg shadow-lg">
+<div class="text-4xl font-bold text-primary mb-2">50+</div>
+<div class="text-gray-600">Research Papers</div>
+</div>
+<div class="project-card text-center p-6 bg-white rounded-lg shadow-lg">
+<div class="text-4xl font-bold text-primary mb-2">20+</div>
+<div class="text-gray-600">Patents Filed</div>
+</div>
+<div class="project-card text-center p-6 bg-white rounded-lg shadow-lg">
+<div class="text-4xl font-bold text-primary mb-2">15+</div>
+<div class="text-gray-600">Industry Partners</div>
+</div>
+<div class="project-card text-center p-6 bg-white rounded-lg shadow-lg">
+<div class="text-4xl font-bold text-primary mb-2">30+</div>
+<div class="text-gray-600">Research Projects</div>
+</div>
+</div>
+</section> -->
+<!-- Latest News -->
+<section>
+<h2 class="text-3xl font-bold mb-12 text-center">成员</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="project-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-all duration-300">
+<img src="https://ai-public.mastergo.com/ai/img_res/5de901c2c17e498896165cbe5c7ab4c4.jpg" alt="Conference" class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-3">International Conference on Neuromorphic Systems 2024</h3>
+<p class="text-gray-600">Our team presented groundbreaking research at the ICONS 2024 conference.</p>
+<p class="text-primary mt-4">March 15, 2024</p>
+</div>
+</div>
+<div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
+<img src="https://ai-public.mastergo.com/ai/img_res/bfe43d873b9aa34e30b18dde649ba206.jpg" alt="New Lab" class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-3">New Research Facility Opening</h3>
+<p class="text-gray-600">Expanding our research capabilities with state-of-the-art neuromorphic testing facilities.</p>
+<p class="text-primary mt-4">March 1, 2024</p>
+</div>
+</div>
+<div class="project-card bg-white rounded-lg shadow-lg overflow-hidden">
+<img src="https://ai-public.mastergo.com/ai/img_res/35fefa85ffa9d53b4cee455c33ed031c.jpg" alt="Partnership" class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-3">Strategic Partnership Announcement</h3>
+<p class="text-gray-600">New collaboration with leading technology companies to advance neuromorphic computing.</p>
+<p class="text-primary mt-4">February 20, 2024</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<!-- <footer class="bg-gray-900 text-white py-12">
+
+<div class="max-w-7xl mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<h3 class="font-['Pacifico'] text-2xl mb-4">logo</h3>
+<p class="text-gray-400">Advancing the future of brain-inspired computing through innovative research and development.</p>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white">Research</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Publications</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Team</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Contact</h4>
+<ul class="space-y-2 text-gray-400">
+<li>123 Research Avenue</li>
+<li>Cambridge, MA 02139</li>
+<li>contact@brainlab.edu</li>
+<li>+1 (617) 555-0123</li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Follow Us</h4>
+<div class="flex space-x-4">
+<a href="#" class="text-gray-400 hover:text-white">
+<i class="fab fa-twitter"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-white">
+<i class="fab fa-linkedin"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-white">
+<i class="fab fa-github"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+<p>&copy; 2024 Brain-Inspired Computing Lab. All rights reserved.</p>
+</div>
+</div>
+</footer> -->
+<footer class="bg-gray-900 text-white py-12">
+  <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-4 gap-8">
+          <div>
+              <a href="/" class="font-['Pacifico'] text-2xl text-white mb-6 block">logo</a>
+              <p class="text-gray-400">启元脑芯片实验室致力于脑机接口技术研发与创新，打造智能科技未来。</p>
+          </div>
+          <div>
+              <h4 class="text-lg font-semibold mb-4">快速链接</h4>
+              <ul class="space-y-2 text-gray-400">
+                  <li><a href="/" class="hover:text-white">首页</a></li>
+                  <li><a href="/news" class="hover:text-white">新闻</a></li>
+                  <li><a href="/papers" class="hover:text-white">论文集</a></li>
+                  <li><a href="/members" class="hover:text-white">成员</a></li>
+                  <li><a href="/cooperation" class="hover:text-white">合作</a></li>
+              </ul>
+          </div>
+          <div>
+              <h4 class="text-lg font-semibold mb-4">合作方式</h4>
+              <ul class="space-y-2 text-gray-400">
+                  <li>产学研合作</li>
+                  <li>技术授权</li>
+                  <li>人才培养</li>
+                  <li>项目合作</li>
+              </ul>
+          </div>
+          <div>
+          </div>
+      </div>
+      <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+          <p>© 2024 启元脑芯片实验室. 保留所有权利.</p>
+      </div>
+  </div>
+</footer>
+<script>
+// Scroll animation for project cards and header
+function checkVisibility() {
+const cards = document.querySelectorAll('.project-card');
+const header = document.getElementById('header');
+const scrollPosition = window.scrollY;
+// Handle project cards visibility
+cards.forEach(card => {
+const rect = card.getBoundingClientRect();
+const isVisible = rect.top <= window.innerHeight - 100;
+if (isVisible) {
+card.classList.add('visible');
+}
+});
+// Handle header background
+if (scrollPosition > 50) {
+header.classList.remove('bg-transparent');
+header.classList.add('bg-white', 'shadow-sm');
+document.querySelectorAll('.nav-link').forEach(link => {
+link.classList.remove('text-white', 'hover:text-white/80');
+link.classList.add('text-gray-700', 'hover:text-primary');
+});
+document.querySelectorAll('.fa-search, .fa-user, .fa-bars').forEach(icon => {
+icon.classList.remove('text-white');
+icon.classList.add('text-gray-600');
+});
+document.querySelectorAll('button').forEach(btn => {
+btn.classList.remove('hover:bg-white/10');
+btn.classList.add('hover:bg-gray-100');
+});
+document.querySelector('.logo-text').classList.remove('text-white');
+} else {
+header.classList.add('bg-transparent');
+header.classList.remove('bg-white', 'shadow-sm');
+document.querySelectorAll('.nav-link').forEach(link => {
+link.classList.add('text-white', 'hover:text-white/80');
+link.classList.remove('text-gray-700', 'hover:text-primary');
+});
+document.querySelectorAll('.fa-search, .fa-user, .fa-bars').forEach(icon => {
+icon.classList.add('text-white');
+icon.classList.remove('text-gray-600');
+});
+document.querySelectorAll('button').forEach(btn => {
+btn.classList.add('hover:bg-white/10');
+btn.classList.remove('hover:bg-gray-100');
+});
+document.querySelector('.logo-text').classList.remove('text-white');
+}
+}
+window.addEventListener('scroll', checkVisibility);
+window.addEventListener('load', checkVisibility);
+</script>
+<!-- News Detail Page -->
+<div id="newsDetail" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 overflow-y-auto">
+  <div class="min-h-screen px-4 flex items-center justify-center">
+    <div class="bg-white rounded-lg max-w-4xl w-full mx-auto shadow-xl relative">
+      <!-- Close Button -->
+      <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-700" onclick="closeNewsDetail()">
+        <i class="fas fa-times text-xl"></i>
+      </button>
+      
+      <!-- Content -->
+      <div class="p-8">
+        <img src="https://ai-public.mastergo.com/ai/img_res/2dca418d78737667b325a57801c66790.jpg" 
+             alt="Conference" 
+             class="w-full h-[400px] object-cover rounded-lg mb-8">
+        
+        <h2 class="text-3xl font-bold mb-4">International Conference on Neuromorphic Systems 2024</h2>
+        <p class="text-gray-500 mb-6">March 15, 2024 | Scientific Events</p>
+        
+        <div class="prose max-w-none">
+          <p class="mb-4">Our research team recently presented groundbreaking findings at the International Conference on Neuromorphic Systems (ICONS) 2024, showcasing innovative advancements in brain-inspired computing architecture.</p>
+          
+          <h3 class="text-xl font-bold my-4">Key Highlights</h3>
+          <ul class="list-disc pl-6 mb-6">
+            <li class="mb-2">Presentation of novel neuromorphic computing architecture achieving 40% improved energy efficiency</li>
+            <li class="mb-2">Demo of real-time neural processing capabilities using our latest chip design</li>
+            <li class="mb-2">Recognition for best paper award in the hardware implementation category</li>
+            <li class="mb-2">Establishment of new international research collaborations</li>
+          </ul>
+          
+          <h3 class="text-xl font-bold my-4">Research Impact</h3>
+          <p class="mb-4">The presented research demonstrates significant progress in addressing key challenges in neuromorphic computing, particularly in the areas of energy efficiency and processing speed. Our team's innovative approach combines advanced neural architecture design with optimized hardware implementation, resulting in a system that more closely mimics biological neural networks while maintaining practical applicability.</p>
+          
+          <h3 class="text-xl font-bold my-4">Future Directions</h3>
+          <p class="mb-4">Building on the success at ICONS 2024, our lab is now focusing on:</p>
+          <ul class="list-disc pl-6 mb-6">
+            <li class="mb-2">Scaling the architecture for larger neural networks</li>
+            <li class="mb-2">Implementing advanced learning algorithms</li>
+            <li class="mb-2">Exploring applications in edge computing devices</li>
+          </ul>
+          
+          <div class="mt-8">
+            <h3 class="text-xl font-bold mb-4">Conference Gallery</h3>
+            <div class="grid grid-cols-3 gap-4">
+              <img src="https://ai-public.mastergo.com/ai/img_res/835dc05b54c8fdf40a2bec519e4eba9d.jpg" alt="Presentation" class="rounded-lg">
+              <img src="https://ai-public.mastergo.com/ai/img_res/264889ec8d7459878cbd13813d01b393.jpg" alt="Team Discussion" class="rounded-lg">
+              <img src="https://ai-public.mastergo.com/ai/img_res/c9efac6d24972b6a606d7983466f4970.jpg" alt="Demo Setup" class="rounded-lg">
+            </div>
+          </div>
+        </div>
+        
+        <!-- Share Buttons -->
+        <div class="mt-8 pt-8 border-t border-gray-200">
+          <h4 class="text-lg font-bold mb-4">Share this article</h4>
+          <div class="flex space-x-4">
+            <button class="!rounded-button flex items-center space-x-2 bg-[#1DA1F2] text-white px-4 py-2">
+              <i class="fab fa-twitter"></i>
+              <span>Twitter</span>
+            </button>
+            <button class="!rounded-button flex items-center space-x-2 bg-[#0077B5] text-white px-4 py-2">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </button>
+            <button class="!rounded-button flex items-center space-x-2 bg-gray-800 text-white px-4 py-2">
+              <i class="fas fa-link"></i>
+              <span>Copy Link</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+function showNewsDetail() {
+  document.getElementById('newsDetail').classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+}
+function closeNewsDetail() {
+  document.getElementById('newsDetail').classList.add('hidden');
+  document.body.style.overflow = 'auto';
+}
+// Add click event to news cards
+document.querySelectorAll('.project-card').forEach(card => {
+  card.addEventListener('click', showNewsDetail);
+});
+</script>
+</body>
+</html>
