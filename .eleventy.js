@@ -9,8 +9,8 @@ module.exports = function (eleventyConfig) {
       templateFormats: ["html", "njk", "md"],
       pathPrefix: "/QiyuanWarehouse/", // 设置路径前缀
       dir: {
-        input: "./src",    // 输入文件夹
-        output: "./dist",  // 输出文件夹
+        input: "src",    // 输入文件夹
+        output: "dist",  // 输出文件夹
         includes: "includes", // 
       },
     };
