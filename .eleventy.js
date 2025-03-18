@@ -5,7 +5,7 @@ module.exports = function (eleventyConfig) {
   
     return {
       passthroughFileCpoy:true,
-      markdownTemplateEngine: "njk",
+      // markdownTemplateEngine: "njk",
       templateFormats: ["html", "njk", "md"],
       pathPrefix: "/QiyuanWarehouse/", // 设置路径前缀
       dir: {
