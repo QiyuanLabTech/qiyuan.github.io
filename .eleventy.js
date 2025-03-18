@@ -4,7 +4,9 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/js");
   
     return {
-        passthroughFileCpoy:true,
+      passthroughFileCpoy:true,
+      markdownTemplateEngine: "njk",
+      templateFormats: ["html", "njk", "md"],
       dir: {
         input: "./src",    // 输入文件夹
         output: "./dist",  // 输出文件夹
