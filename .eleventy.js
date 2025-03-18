@@ -11,7 +11,7 @@ module.exports = function (eleventyConfig) {
       dir: {
         input: "./src",    // 输入文件夹
         output: "./dist",  // 输出文件夹
-        includes: "includes",
+        includes: "includes", // 
       },
     };
   };
