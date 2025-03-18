@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monospace+Neon&display=swap');
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+code, pre {
+    font-family: 'Monospace Neon', monospace;
+    background-color: #f5f5f5;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    color: #d63384;
+}
+.logo{
+    color: #0066cc;
+}
