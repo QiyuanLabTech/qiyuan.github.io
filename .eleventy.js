@@ -2,7 +2,7 @@ module.exports = function (eleventyConfig) {
   // 复制静态资源（CSS、JS）到输出目录
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/js");
-
+  eleventyConfig.addPassthroughCopy("src/images");
   return {
     dir: {
       input: "src",    // 输入文件夹
