@@ -105,34 +105,55 @@ layour:'base.njk'
 <!-- Projects -->
 <section class="mb-20">
 <h2 class="text-3xl font-bold mb-12 text-center">论文集</h2>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-<img src="https://ai-public.mastergo.com/ai/img_res/891b6e5329dda2c3ceec41453acc6729.jpg" alt="BCI Project" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
-<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<div class="absolute bottom-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-<h3 class="text-xl font-bold mb-2">Brain-Computer Interface</h3>
-<p class="text-sm text-gray-200 mb-4">Developing next-generation neural interfaces for direct brain-computer communication</p>
-</div>
-</div>
-</div>
-<div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-<img src="https://ai-public.mastergo.com/ai/img_res/8780832f55eae4f0c453680d0dfc1624.jpg" alt="Neuromorphic Computing" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
-<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<div class="absolute bottom-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-<h3 class="text-xl font-bold mb-2">Neuromorphic Computing</h3>
-<p class="text-sm text-gray-200 mb-4">Creating energy-efficient computing systems inspired by biological neural networks</p>
-</div>
-</div>
-</div>
-<div class="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-<img src="https://ai-public.mastergo.com/ai/img_res/c3903b6a2e9885c5443a8698895f7464.jpg" alt="AI Algorithms" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110">
-<div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<div class="absolute bottom-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-<h3 class="text-xl font-bold mb-2">AI Algorithm Development</h3>
-<p class="text-sm text-gray-200 mb-4">Advancing machine learning algorithms for neuromorphic computing platforms</p>
-</div>
-</div>
-</div>
+<div class="flex flex-col gap-6">
+  <div class="card bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer flex" onclick="openModal('paper1')" style="font-size: 1.25rem;">
+    <div class="w-80 h-52 flex-shrink-0">
+      <img src="https://ai-public.mastergo.com/ai/img_res/37ea909e749df7f9cbdeafdeefdae5f4.jpg" alt="论文封面" class="w-full h-full object-cover">
+    </div>
+    <div class="p-8 flex-1">
+      <h3 class="text-2xl font-semibold text-gray-900 mb-4">量子计算在机器学习中的应用研究</h3>
+      <p class="text-gray-600 text-lg mb-6">本研究探讨了量子计算技术在深度学习模型优化中的创新应用，提出了一种新型量子-经典混合算法。</p>
+      <div class="flex items-center text-lg text-gray-500">
+        <i class="fas fa-user-circle mr-2"></i>
+        <span>张明远 教授</span>
+        <span class="mx-2">|</span>
+        <i class="fas fa-calendar-alt mr-2"></i>
+        <span>2024-01-15</span>
+      </div>
+    </div>
+  </div>
+  <div class="card bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer flex" onclick="openModal('paper2')" style="font-size: 1.25rem;">
+    <div class="w-80 h-52 flex-shrink-0">
+      <img src="https://ai-public.mastergo.com/ai/img_res/39fa9288737a905d0eeae33c79588e46.jpg" alt="论文封面" class="w-full h-full object-cover">
+    </div>
+    <div class="p-8 flex-1">
+      <h3 class="text-2xl font-semibold text-gray-900 mb-4">大规模语言模型的知识蒸馏技术研究</h3>
+      <p class="text-gray-600 text-lg mb-6">针对大规模语言模型在实际应用中的效率问题，提出了一种新型知识蒸馏框架。</p>
+      <div class="flex items-center text-lg text-gray-500">
+        <i class="fas fa-user-circle mr-2"></i>
+        <span>李雨晴 副教授</span>
+        <span class="mx-2">|</span>
+        <i class="fas fa-calendar-alt mr-2"></i>
+        <span>2024-01-10</span>
+      </div>
+    </div>
+  </div>
+  <div class="card bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer flex" onclick="openModal('paper3')" style="font-size: 1.25rem;">
+    <div class="w-80 h-52 flex-shrink-0">
+      <img src="https://ai-public.mastergo.com/ai/img_res/fdea0cb327128ee8f8ac5bc2929ef0d2.jpg" alt="论文封面" class="w-full h-full object-cover">
+    </div>
+    <div class="p-8 flex-1">
+      <h3 class="text-2xl font-semibold text-gray-900 mb-4">基于图神经网络的社交网络分析方法</h3>
+      <p class="text-gray-600 text-lg mb-6">本文提出了一种新型图神经网络架构，用于大规模社交网络中的用户行为分析。</p>
+      <div class="flex items-center text-lg text-gray-500">
+        <i class="fas fa-user-circle mr-2"></i>
+        <span>王建国 研究员</span>
+        <span class="mx-2">|</span>
+        <i class="fas fa-calendar-alt mr-2"></i>
+        <span>2024-01-05</span>
+      </div>
+    </div>
+  </div>
 </div>
 </section>
 <!-- Latest Publications -->

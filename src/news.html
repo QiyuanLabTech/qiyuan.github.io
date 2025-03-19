@@ -8,11 +8,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-<link rel="stylesheet" href="QiyuanWarehouse/css/news.css">
-<link rel="stylesheet" href="QiyuanWarehouse/css/global.css">
+<link rel="stylesheet" href="/css/news.css">
+<link rel="stylesheet" href="/css/global.css">
 <script src="https://cdn.tailwindcss.com"></script>
-<script src="QiyuanWarehouse/js/tailwind-config.js"></script>
-<script src="QiyuanWarehouse/js/news.js"></script>
+<script src="/js/tailwind-config.js"></script>
+<script src="/js/news.js"></script>
 </head>
 <body class="bg-gray-50">
 <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
@@ -25,7 +25,7 @@
 <a href="/index" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">首页</a>
 <a href="#" class="text-[#0066CC] px-3 py-2 text-sm font-medium">新闻</a>
 <a href="/proceedings" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">论文集</a>
-<a href="/TeamMember" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">成员</a>
+<a href="/teamMember" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">成员</a>
 <a href="/collaboration" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">合作</a>
 </nav>
 </div>
@@ -45,9 +45,6 @@
 <h3 class="text-lg font-semibold text-gray-900 mb-2">启元脑芯片突破性研究成果发布</h3>
 <p class="text-gray-600 text-sm mb-4">实验室团队在脑机接口领域取得重大突破，新型神经芯片实现了更高效的信息处理能力。</p>
 <div class="flex items-center text-sm text-gray-500">
-<i class="fas fa-user-circle mr-2"></i>
-<span>*** 教授</span>
-<span class="mx-2">|</span>
 <i class="fas fa-calendar-alt mr-2"></i>
 <span>2024-01-15</span>
 </div>
@@ -61,9 +58,6 @@
 <h3 class="text-lg font-semibold text-gray-900 mb-2">国际合作项目启动仪式圆满举行</h3>
 <p class="text-gray-600 text-sm mb-4">我们与多个国际顶尖研究机构建立合作关系，共同推进脑科学研究的发展。</p>
 <div class="flex items-center text-sm text-gray-500">
-<i class="fas fa-user-circle mr-2"></i>
-<span>*** 副教授</span>
-<span class="mx-2">|</span>
 <i class="fas fa-calendar-alt mr-2"></i>
 <span>2024-01-10</span>
 </div>
@@ -77,9 +71,6 @@
 <h3 class="text-lg font-semibold text-gray-900 mb-2">2024 脑科学前沿论坛成功举办</h3>
 <p class="text-gray-600 text-sm mb-4">来自全球的顶尖科学家齐聚一堂，共同探讨脑科学研究的最新进展。</p>
 <div class="flex items-center text-sm text-gray-500">
-<i class="fas fa-user-circle mr-2"></i>
-<span>*** 研究员</span>
-<span class="mx-2">|</span>
 <i class="fas fa-calendar-alt mr-2"></i>
 <span>2024-01-05</span>
 </div>
@@ -107,6 +98,40 @@
 </div>
 </div>
 </div>
+<footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-4 gap-8">
+            <div>
+                <a href="/" class="font-['Pacifico'] text-2xl text-white mb-6 block">logo</a>
+                <p class="text-gray-400">启元脑芯片实验室致力于脑机接口技术研发与创新，打造智能科技未来。</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">快速链接</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="/index" class="hover:text-white">首页</a></li>
+                    <li><a href="/news" class="hover:text-white">新闻</a></li>
+                    <li><a href="/papers" class="hover:text-white">论文集</a></li>
+                    <li><a href="/members" class="hover:text-white">成员</a></li>
+                    <li><a href="/collaboration" class="hover:text-white">合作</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">合作方式</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li>产学研合作</li>
+                    <li>技术授权</li>
+                    <li>人才培养</li>
+                    <li>项目合作</li>
+                </ul>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+            <p>© 2024 启元脑芯片实验室. 保留所有权利.</p>
+        </div>
+    </div>
+</footer>
 <script>
 const papers = {
 paper1: {
@@ -250,7 +275,7 @@ title: "智能机器人控制系统优化",
 content: `
 <div class="space-y-6">
 <div class="flex items-center space-x-4 text-sm text-gray-500 mb-6">
-<div><i class="fas fa-user-circle mr-2"></i>陈海洋 副教授</div>
+<div><i class="fas fa-user-circle mr-2"></i>*** 副教授</div>
 <div><i class="fas fa-calendar-alt mr-2"></i>2023-12-28</div>
 <div><i class="fas fa-tag mr-2"></i>机器人控制, 人工智能</div>
 </div>
@@ -284,7 +309,7 @@ title: "边缘计算网络架构研究",
 content: `
 <div class="space-y-6">
 <div class="flex items-center space-x-4 text-sm text-gray-500 mb-6">
-<div><i class="fas fa-user-circle mr-2"></i>吴云帆 研究员</div>
+<div><i class="fas fa-user-circle mr-2"></i>**** 研究员</div>
 <div><i class="fas fa-calendar-alt mr-2"></i>2023-12-25</div>
 <div><i class="fas fa-tag mr-2"></i>边缘计算, 网络架构</div>
 </div>
