@@ -11,5 +11,6 @@ module.exports = function (eleventyConfig) {
       // layouts: "_layouts" // 布局文件存放目录
     },
     passthroughFileCopy: true
+    
   };
 };
