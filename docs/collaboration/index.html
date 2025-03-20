@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>合作 - 启元脑芯片实验室</title>
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"> -->
+<link rel="stylesheet" href="/css/collaboration.css">
+<link rel="stylesheet" href="/css/global.css">
+<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+<link href="/output.css" rel="stylesheet">
+<script src="/js/tailwind-config.js"></script>
+</head>
+<body>
+<div id="modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-[100] flex items-center justify-center overflow-hidden">
+<div class="bg-white rounded-lg max-w-2xl w-full mx-4 p-8 max-h-[90vh] overflow-y-auto animate-modalShow">
+<div class="flex justify-between items-center mb-6 sticky top-0 bg-white z-10">
+<h3 id="modalTitle" class="text-2xl font-bold"></h3>
+<button onclick="closeModal()" class="text-gray-400 hover:text-gray-600">
+<i class="fas fa-times text-xl"></i>
+</button>
+</div>
+<div id="modalContent"></div>
+</div>
+</div>
+<header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+            <a href="/" class="font-['Pacifico'] text-2xl text-primary">
+                logo
+            </a>
+            <nav class="flex space-x-8">
+                <a href="/index" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">首页</a>
+                <a href="/news" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">新闻</a>
+                <a href="/proceedings" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">论文集</a>
+                <a href="/teamMember" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">成员</a>
+                <a href="#" class="text-primary font-medium px-3 py-2 text-sm font-medium">合作</a>
+            </nav>
+        </div>
+    </div>
+</header>
+<main class="pt-[70px]">
+<!-- Hero Section -->
+<section class="relative h-[500px] bg-cover bg-center" style="background-image: url('/images/collaboration1.jpg')">
+<div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent"></div>
+<div class="container mx-auto px-6 h-full flex items-center">
+<div class="max-w-2xl text-white z-10">
+<h1 class="text-4xl font-bold mb-4">携手共创未来，共建智能新纪元</h1>
+<p class="text-lg mb-8">启元脑芯片实验室致力于推动脑机接口技术创新，诚邀各界伙伴开展深度合作，共同探索人工智能的无限可能。</p>
+</div>
+</div>
+</section>
+<!-- Cooperation Types -->
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-16">合作方式</h2>
+<div class="grid grid-cols-4 gap-8">
+<div class="bg-white p-8 rounded-lg shadow-lg text-center">
+<div class="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
+<i class="fas fa-university text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">产学研合作</h3>
+<p class="text-gray-600 mb-6">联合高校科研院所，促进技术创新与成果转化，打造产学研深度融合的创新生态。</p>
+<button onclick="showDetails('产学研合作', '产学研合作详细内容：<br><br>1. 联合研发项目<br>• 共同设立研发课题<br>• 优势资源互补<br>• 成果共享机制<br><br>2. 技术成果转化<br>• 专利许可与转让<br>• 产业化指导<br>• 市场推广支持<br><br>3. 实验室共建<br>• 共建实验平台<br>• 设备资源共享<br>• 技术人员交流<br><br>4. 学术交流<br>• 定期学术研讨<br>• 联合发表论文<br>• 举办学术会议')" class="!rounded-button text-primary border border-primary px-6 py-2 hover:bg-primary hover:text-white transition-colors">了解详情</button>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg text-center">
+<div class="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
+<i class="fas fa-lightbulb text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">技术授权</h3>
+<p class="text-gray-600 mb-6">提供脑芯片核心技术授权，助力企业快速实现技术升级，抢占市场先机。</p>
+<button onclick="showDetails('产学研合作', '产学研合作详细内容：<br><br>1. 联合研发项目<br>• 共同设立研发课题<br>• 优势资源互补<br>• 成果共享机制<br><br>2. 技术成果转化<br>• 专利许可与转让<br>• 产业化指导<br>• 市场推广支持<br><br>3. 实验室共建<br>• 共建实验平台<br>• 设备资源共享<br>• 技术人员交流<br><br>4. 学术交流<br>• 定期学术研讨<br>• 联合发表论文<br>• 举办学术会议')" class="!rounded-button text-primary border border-primary px-6 py-2 hover:bg-primary hover:text-white transition-colors">了解详情</button>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg text-center">
+<div class="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
+<i class="fas fa-users text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">人才培养</h3>
+<p class="text-gray-600 mb-6">开展人才联合培养项目，为企业输送专业人才，助力行业发展。</p>
+<button onclick="showDetails('产学研合作', '产学研合作详细内容：<br><br>1. 联合研发项目<br>• 共同设立研发课题<br>• 优势资源互补<br>• 成果共享机制<br><br>2. 技术成果转化<br>• 专利许可与转让<br>• 产业化指导<br>• 市场推广支持<br><br>3. 实验室共建<br>• 共建实验平台<br>• 设备资源共享<br>• 技术人员交流<br><br>4. 学术交流<br>• 定期学术研讨<br>• 联合发表论文<br>• 举办学术会议')" class="!rounded-button text-primary border border-primary px-6 py-2 hover:bg-primary hover:text-white transition-colors">了解详情</button>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg text-center">
+<div class="w-20 h-20 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
+<i class="fas fa-handshake text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">项目合作</h3>
+<p class="text-gray-600 mb-6">面向行业需求，开展定制化研发项目，提供全方位技术支持与服务。</p>
+<button onclick="showDetails('产学研合作', '产学研合作详细内容：<br><br>1. 联合研发项目<br>• 共同设立研发课题<br>• 优势资源互补<br>• 成果共享机制<br><br>2. 技术成果转化<br>• 专利许可与转让<br>• 产业化指导<br>• 市场推广支持<br><br>3. 实验室共建<br>• 共建实验平台<br>• 设备资源共享<br>• 技术人员交流<br><br>4. 学术交流<br>• 定期学术研讨<br>• 联合发表论文<br>• 举办学术会议')" class="!rounded-button text-primary border border-primary px-6 py-2 hover:bg-primary hover:text-white transition-colors">了解详情</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Partners -->
+<section class="py-20">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-16">合作伙伴</h2>
+<div class="grid grid-cols-5 gap-8">
+<div class="partner-logo bg-gray-50 p-8 rounded-lg flex items-center justify-center">
+<img src="/images/collaboration2.jpg" alt="合作伙伴" class="max-w-[150px]">
+</div>
+<div class="partner-logo bg-gray-50 p-8 rounded-lg flex items-center justify-center">
+<img src="/images/collaboration2.jpg" alt="合作伙伴" class="max-w-[150px]">
+</div>
+<div class="partner-logo bg-gray-50 p-8 rounded-lg flex items-center justify-center">
+<img src="/images/collaboration2.jpg" alt="合作伙伴" class="max-w-[150px]">
+</div>
+<div class="partner-logo bg-gray-50 p-8 rounded-lg flex items-center justify-center">
+<img src="/images/collaboration2.jpg" alt="合作伙伴" class="max-w-[150px]">
+</div>
+<div class="partner-logo bg-gray-50 p-8 rounded-lg flex items-center justify-center">
+<img src="/images/collaboration2.jpg" alt="合作伙伴" class="max-w-[150px]">
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-4 gap-8">
+            <div>
+                <a href="/" class="font-['Pacifico'] text-2xl text-white mb-6 block">logo</a>
+                <p class="text-gray-400">启元脑芯片实验室致力于脑机接口技术研发与创新，打造智能科技未来。</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">快速链接</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="/index" class="hover:text-white">首页</a></li>
+                    <li><a href="/news" class="hover:text-white">新闻</a></li>
+                    <li><a href="/papers" class="hover:text-white">论文集</a></li>
+                    <li><a href="/teamMember" class="hover:text-white">成员</a></li>
+                    <li><a href="/collaboration" class="hover:text-white">合作</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">合作方式</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li>产学研合作</li>
+                    <li>技术授权</li>
+                    <li>人才培养</li>
+                    <li>项目合作</li>
+                </ul>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+            <p>© 2024 启元脑芯片实验室. 保留所有权利.</p>
+        </div>
+    </div>
+</footer>
+<script>
+function showDetails(title, content) {
+document.getElementById('modalTitle').innerHTML = title;
+document.getElementById('modalContent').innerHTML = content;
+document.getElementById('modal').classList.remove('hidden');
+document.body.classList.add('modal-open');
+}
+function closeModal() {
+document.getElementById('modal').classList.add('hidden');
+document.body.classList.remove('modal-open');
+}
+// 点击模态框外部关闭
+document.getElementById('modal').addEventListener('click', function(e) {
+if (e.target === this) {
+closeModal();
+}
+});
+</script>
+</body>
+</html>

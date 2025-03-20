@@ -26,7 +26,7 @@ layour:'base.njk'
   <a href="/" class="font-['Pacifico'] text-2xl text-primary transition-colors duration-300 logo">logo</a>
   </div>
   <nav class="hidden md:flex space-x-8">
-    <a href="/news" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">新闻</a>
+    <a href="news" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">新闻</a>
     <a href="/proceedings" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">论文集</a>
     <a href="/teamMember" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">成员</a>
     <a href="/collaboration" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">合作</a>
@@ -43,7 +43,7 @@ layour:'base.njk'
   </div>
   </header>
 <!-- Hero Section -->
-<section class="relative h-screen overflow-hidden" style="background-image: url('/images/banner.jpg'); background-size: cover; background-position: center;">
+<section class="relative h-screen overflow-hidden" style="background-image: url('images/banner.jpg'); background-size: cover; background-position: center;">
 <div class="absolute inset-0 bg-black bg-opacity-50"></div>
 <div class="relative max-w-7xl mx-auto px-4 h-full flex items-center">
 <div class="hero-text text-white max-w-3xl">
@@ -59,9 +59,9 @@ layour:'base.njk'
 <section class="mb-20">
   <h2 class="text-3xl font-bold mb-12 text-center">新闻</h2>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-  <div class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300" onclick="location.href='/news'">
+  <div class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300" onclick="location.href='news'">
   <div class="relative h-48 overflow-hidden">
-  <img src="/images/news1.jpg"
+  <img src="images/news1.jpg"
   alt="Project 1"
   class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 group-hover:brightness-75">
   </div>
