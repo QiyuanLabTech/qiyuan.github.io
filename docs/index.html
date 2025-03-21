@@ -15,11 +15,31 @@
 <script src="js/tailwind-config.js"></script>
 </head>
 <body class="bg-white">
-<!-- ---
-layour:'base.njk'
---- -->
+  <header id="header" class="fixed top-0 left-0 w-full bg-transparent transition-all duration-300 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-[80px]">
+      <div class="flex-shrink-0">
+        <a href="/" class="font-['Pacifico'] text-2xl text-primary transition-colors duration-300 logo">logo</a>
+      </div>
+      <nav class="hidden md:flex space-x-8">
+        <a href="news" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">新闻</a>
+        <a href="proceedings" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">论文集</a>
+        <a href="teamMember" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">成员</a>
+        <a href="collaboration" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">合作</a>
+      </nav>
+      <div class="flex items-center space-x-4">
+        <button class="!rounded-button p-2 hover:bg-white/10">
+          <i class="fas fa-search text-white transition-colors duration-300"></i>
+        </button>
+        <button class="md:hidden !rounded-button p-2 hover:bg-white/10">
+          <i class="fas fa-bars text-white transition-colors duration-300"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
 <!-- Header -->
-<header id="header" class="fixed top-0 left-0 w-full bg-transparent transition-all duration-300 z-50">
+<!-- <header id="header" class="fixed top-0 left-0 w-full bg-transparent transition-all duration-300 z-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
   <div class="flex justify-between items-center h-[80px]">
   <div class="flex-shrink-0">
@@ -41,7 +61,7 @@ layour:'base.njk'
   </div>
   </div>
   </div>
-  </header>
+  </header> -->
 <!-- Hero Section -->
 <section class="relative h-screen overflow-hidden" style="background-image: url('images/banner.jpg'); background-size: cover; background-position: center;">
 <div class="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -219,6 +239,40 @@ layour:'base.njk'
       </div>
   </div>
 </footer>
+<!-- <footer class="bg-gray-900 text-white py-12">
+  <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-4 gap-8">
+          <div>
+              <a href="/" class="font-['Pacifico'] text-2xl text-white mb-6 block">logo</a>
+              <p class="text-gray-400">启元脑芯片实验室致力于脑机接口技术研发与创新，打造智能科技未来。</p>
+          </div>
+          <div>
+              <h4 class="text-lg font-semibold mb-4">快速链接</h4>
+              <ul class="space-y-2 text-gray-400">
+                  <li><a href="/" class="hover:text-white">首页</a></li>
+                  <li><a href="news" class="hover:text-white">新闻</a></li>
+                  <li><a href="papers" class="hover:text-white">论文集</a></li>
+                  <li><a href="members" class="hover:text-white">成员</a></li>
+                  <li><a href="collaboration" class="hover:text-white">合作</a></li>
+              </ul>
+          </div>
+          <div>
+              <h4 class="text-lg font-semibold mb-4">合作方式</h4>
+              <ul class="space-y-2 text-gray-400">
+                  <li>产学研合作</li>
+                  <li>技术授权</li>
+                  <li>人才培养</li>
+                  <li>项目合作</li>
+              </ul>
+          </div>
+          <div>
+          </div>
+      </div>
+      <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+          <p>© 2024 启元脑芯片实验室. 保留所有权利.</p>
+      </div>
+  </div>
+</footer> -->
 <script>
 // Scroll animation for project cards and header
 function checkVisibility() {

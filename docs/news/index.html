@@ -16,7 +16,23 @@
 <script src="js/news.js"></script>
 </head>
 <body class="bg-gray-50">
-<header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+<div class="max-w-7xl mx-auto px-4">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center">
+<a href="#" class="text-2xl font-['Pacifico'] text-primary">logo</a>
+</div>
+<nav class="flex space-x-8">
+<a href="index" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">首页</a>
+<a href="news" class="text-[#0066CC] px-3 py-2 text-sm font-medium">新闻</a>
+<a href="proceedings" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">论文集</a>
+<a href="teamMember" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">成员</a>
+<a href="collaboration" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">合作</a>
+</nav>
+</div>
+</div>
+</header>
+<!-- <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
 <div class="max-w-7xl mx-auto px-4">
 <div class="flex items-center justify-between h-16">
 <div class="flex items-center">
@@ -31,7 +47,7 @@
 </nav>
 </div>
 </div>
-</header>
+</header> -->
 <main class="max-w-7xl mx-auto px-4 pt-24 pb-12">
 <div class="mb-8">
 <h1 class="text-3xl font-bold text-gray-900">新闻中心</h1>
@@ -100,6 +116,40 @@
 </div>
 </div>
 <footer class="bg-gray-900 text-white py-12">
+  <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-4 gap-8">
+          <div>
+              <a href="/" class="font-['Pacifico'] text-2xl text-white mb-6 block">logo</a>
+              <p class="text-gray-400">启元脑芯片实验室致力于脑机接口技术研发与创新，打造智能科技未来。</p>
+          </div>
+          <div>
+              <h4 class="text-lg font-semibold mb-4">快速链接</h4>
+              <ul class="space-y-2 text-gray-400">
+                  <li><a href="/" class="hover:text-white">首页</a></li>
+                  <li><a href="news" class="hover:text-white">新闻</a></li>
+                  <li><a href="papers" class="hover:text-white">论文集</a></li>
+                  <li><a href="members" class="hover:text-white">成员</a></li>
+                  <li><a href="collaboration" class="hover:text-white">合作</a></li>
+              </ul>
+          </div>
+          <div>
+              <h4 class="text-lg font-semibold mb-4">合作方式</h4>
+              <ul class="space-y-2 text-gray-400">
+                  <li>产学研合作</li>
+                  <li>技术授权</li>
+                  <li>人才培养</li>
+                  <li>项目合作</li>
+              </ul>
+          </div>
+          <div>
+          </div>
+      </div>
+      <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+          <p>© 2024 启元脑芯片实验室. 保留所有权利.</p>
+      </div>
+  </div>
+</footer>
+<!-- <footer class="bg-gray-900 text-white py-12">
     <div class="max-w-7xl mx-auto px-4">
         <div class="grid grid-cols-4 gap-8">
             <div>
@@ -132,7 +182,7 @@
             <p>© 2024 启元脑芯片实验室. 保留所有权利.</p>
         </div>
     </div>
-</footer>
+</footer> -->
 <script>
 const papers = {
 paper1: {

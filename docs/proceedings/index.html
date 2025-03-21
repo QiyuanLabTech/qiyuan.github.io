@@ -16,7 +16,30 @@
 <script src="js/tailwind-config.js"></script>
 </head>
 <body class="bg-gray-50">
-<header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+    <header id="header" class="fixed top-0 left-0 w-full bg-transparent transition-all duration-300 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-[80px]">
+      <div class="flex-shrink-0">
+        <a href="/" class="font-['Pacifico'] text-2xl text-primary transition-colors duration-300 logo">logo</a>
+      </div>
+      <nav class="hidden md:flex space-x-8">
+        <a href="news" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">新闻</a>
+        <a href="proceedings" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">论文集</a>
+        <a href="teamMember" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">成员</a>
+        <a href="collaboration" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">合作</a>
+      </nav>
+      <div class="flex items-center space-x-4">
+        <button class="!rounded-button p-2 hover:bg-white/10">
+          <i class="fas fa-search text-white transition-colors duration-300"></i>
+        </button>
+        <button class="md:hidden !rounded-button p-2 hover:bg-white/10">
+          <i class="fas fa-bars text-white transition-colors duration-300"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
 <div class="max-w-7xl mx-auto px-4">
 <div class="flex items-center justify-between h-16">
 <div class="flex items-center">
@@ -31,7 +54,7 @@
 </nav>
 </div>
 </div>
-</header>
+</header> -->
 <main class="max-w-7xl mx-auto px-4 pt-24 pb-12">
 <div class="mb-8">
 <h1 class="text-3xl font-bold text-gray-900">论文集</h1>
