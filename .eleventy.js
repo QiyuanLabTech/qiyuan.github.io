@@ -1,14 +1,10 @@
 module.exports = function (eleventyConfig) {
-  // 添加 Nunjucks 模板支持
-  eleventyConfig.setTemplateFormats([
-    "html",
-    "njk",
-    "md"
-  ]);
   // 复制静态资源（CSS、JS）到输出目录
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/images");
+  // 复制 _includes 文件夹到输出目录
+  eleventyConfig.addPassthroughCopy("src/_includes");
   return {
     dir: {
       input: "src",    // 输入文件夹
