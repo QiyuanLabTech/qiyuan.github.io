@@ -8,11 +8,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-<link rel="stylesheet" href="/css/index.css">
-<link rel="stylesheet" href="/css/global.css">
-<link href="/output.css" rel="stylesheet">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/global.css">
+<link href="output.css" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
-<script src="/js/tailwind-config.js"></script>
+<script src="js/tailwind-config.js"></script>
 </head>
 <body class="bg-white">
 <!-- ---
@@ -27,9 +27,9 @@ layour:'base.njk'
   </div>
   <nav class="hidden md:flex space-x-8">
     <a href="news" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">新闻</a>
-    <a href="/proceedings" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">论文集</a>
-    <a href="/teamMember" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">成员</a>
-    <a href="/collaboration" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">合作</a>
+    <a href="proceedings" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">论文集</a>
+    <a href="teamMember" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">成员</a>
+    <a href="collaboration" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">合作</a>
     </nav>
     <div class="flex items-center space-x-4">
     <button class="!rounded-button p-2 hover:bg-white/10">
@@ -75,7 +75,7 @@ layour:'base.njk'
   </div>
   <div class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300" onclick="location.href='/news'">
   <div class="relative h-48 overflow-hidden">
-  <img src="/images/news2.jpg"
+  <img src="images/news2.jpg"
   alt="Project 2"
   class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 group-hover:brightness-75">
   </div>
@@ -89,7 +89,7 @@ layour:'base.njk'
   </div>
   <div class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300" onclick="location.href='/news'">
   <div class="relative h-48 overflow-hidden">
-  <img src="/images/news3.jpg"
+  <img src="images/news3.jpg"
   alt="Project 3"
   class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 group-hover:brightness-75">
   </div>
@@ -109,7 +109,7 @@ layour:'base.njk'
 <div class="flex flex-col gap-6">
   <div class="card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer flex" onclick="location.href='/proceedings'" style="font-size: 1.25rem;">
     <div class="w-80 h-52 flex-shrink-0">
-      <img src="/images/projects1.jpg" alt="论文封面" class="w-full h-full object-cover">
+      <img src="images/projects1.jpg" alt="论文封面" class="w-full h-full object-cover">
     </div>
     <div class="p-8 flex-1">
       <h3 class="text-2xl font-semibold text-gray-900 mb-4">量子计算在机器学习中的应用研究</h3>
@@ -125,7 +125,7 @@ layour:'base.njk'
   </div>
   <div class="card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer flex" onclick="location.href='proceedings'" style="font-size: 1.25rem;">
     <div class="w-80 h-52 flex-shrink-0">
-      <img src="/images/projects.jpg" alt="论文封面" class="w-full h-full object-cover">
+      <img src="images/projects.jpg" alt="论文封面" class="w-full h-full object-cover">
     </div>
     <div class="p-8 flex-1">
       <h3 class="text-2xl font-semibold text-gray-900 mb-4">大规模语言模型的知识蒸馏技术研究</h3>
@@ -141,7 +141,7 @@ layour:'base.njk'
   </div>
   <div class="card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer flex" onclick="location.href='proceedings'" style="font-size: 1.25rem;">
     <div class="w-80 h-52 flex-shrink-0">
-      <img src="/images/projects3.jpg" alt="论文封面" class="w-full h-full object-cover">
+      <img src="images/projects3.jpg" alt="论文封面" class="w-full h-full object-cover">
     </div>
     <div class="p-8 flex-1">
       <h3 class="text-2xl font-semibold text-gray-900 mb-4">基于图神经网络的社交网络分析方法</h3>
@@ -162,21 +162,21 @@ layour:'base.njk'
   <h2 class="text-3xl font-bold mb-12 text-center">成员</h2>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
   <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-all duration-300" onclick="location.href='/TeamMember'">
-  <img src="/images/meber1.jpg" alt="Conference" class="w-full h-48 object-cover">
+  <img src="images/meber1.jpg" alt="Conference" class="w-full h-48 object-cover">
   <div class="p-6">
   <h3 class="text-xl font-bold mb-3">International Conference on Neuromorphic Systems 2024</h3>
   <p class="text-gray-600">Our team presented groundbreaking research at the ICONS 2024 conference.</p>
   </div>
   </div>
   <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-all duration-300" onclick="location.href='/TeamMember'">
-  <img src="/images/meber2.jpg" alt="New Lab" class="w-full h-48 object-cover">
+  <img src="images/meber2.jpg" alt="New Lab" class="w-full h-48 object-cover">
   <div class="p-6">
   <h3 class="text-xl font-bold mb-3">New Research Facility Opening</h3>
   <p class="text-gray-600">Expanding our research capabilities with state-of-the-art neuromorphic testing facilities.</p>
   </div>
   </div>
   <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-all duration-300" onclick="location.href='/TeamMember'">
-  <img src="/images/meber3.jpg" alt="Partnership" class="w-full h-48 object-cover">
+  <img src="images/meber3.jpg" alt="Partnership" class="w-full h-48 object-cover">
   <div class="p-6">
   <h3 class="text-xl font-bold mb-3">Strategic Partnership Announcement</h3>
   <p class="text-gray-600">New collaboration with leading technology companies to advance neuromorphic computing.</p>
@@ -196,10 +196,10 @@ layour:'base.njk'
               <h4 class="text-lg font-semibold mb-4">快速链接</h4>
               <ul class="space-y-2 text-gray-400">
                   <li><a href="/" class="hover:text-white">首页</a></li>
-                  <li><a href="/news" class="hover:text-white">新闻</a></li>
-                  <li><a href="/papers" class="hover:text-white">论文集</a></li>
-                  <li><a href="/members" class="hover:text-white">成员</a></li>
-                  <li><a href="/collaboration" class="hover:text-white">合作</a></li>
+                  <li><a href="news" class="hover:text-white">新闻</a></li>
+                  <li><a href="papers" class="hover:text-white">论文集</a></li>
+                  <li><a href="members" class="hover:text-white">成员</a></li>
+                  <li><a href="collaboration" class="hover:text-white">合作</a></li>
               </ul>
           </div>
           <div>
