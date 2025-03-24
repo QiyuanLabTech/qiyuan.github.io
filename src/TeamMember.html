@@ -15,8 +15,8 @@
 <script src="js/tailwind-config.js"></script>
 </head>
 <body class="bg-gray-50">
-    <!-- {% include "headernjk.njk" %} -->
-<header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+    {% include "headernjk.njk" %}
+<!-- <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
 <div class="max-w-7xl mx-auto px-4">
 <div class="flex justify-between items-center h-16">
 <a href="/" class="font-['Pacifico'] text-2xl text-primary">
@@ -31,7 +31,7 @@ logo
 </nav>
 </div>
 </div>
-</header>
+</header> -->
 <main class="max-w-7xl mx-auto px-4 pt-24 pb-16">
 <div class="mb-8">
   <h1 class="text-3xl font-bold text-gray-900">实验室成员</h1>
@@ -211,7 +211,8 @@ class="w-full h-40 object-cover rounded-lg mb-4">
 </div>
 </div>
 </div>
-<footer class="bg-gray-900 text-white py-12">
+{% include "footer.njk" %}
+<!-- <footer class="bg-gray-900 text-white py-12">
   <div class="max-w-7xl mx-auto px-4">
       <div class="grid grid-cols-4 gap-8">
           <div>
@@ -244,7 +245,7 @@ class="w-full h-40 object-cover rounded-lg mb-4">
           <p>© 2024 启元脑芯片实验室. 保留所有权利.</p>
       </div>
   </div>
-</footer>
+</footer> -->
 <script>
 const memberData = {
 '*** 教授': {
