@@ -1,188 +1,223 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>启元实验室 - 论文集</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="css/global.css">
-<link rel="stylesheet" href="css/proceedings.css">
-<link href="output.css" rel="stylesheet">
-<script src="js/proceedings.js"></script>
-<script src="js/tailwind-config.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>启元实验室 - 论文集</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/proceedings.css">
+    <script src="js/proceedings.js"></script>
+    <script src="js/tailwind-config.js"></script>
 </head>
+
 <body class="bg-gray-50">
-    {% include "header.njk" %}
-<!-- <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
-<div class="max-w-7xl mx-auto px-4">
-<div class="flex items-center justify-between h-16">
-<div class="flex items-center">
-<a href="#" class="text-2xl font-['Pacifico'] text-primary">logo</a>
-</div>
-<nav class="flex space-x-8">
-<a href="index" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">首页</a>
-<a href="news" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">新闻</a>
-<a href="#" class="text-[#0066CC] px-3 py-2 text-sm font-medium">论文集</a>
-<a href="teamMember" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">成员</a>
-<a href="collaboration" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">合作</a>
-</nav>
-</div>
-</div>
-</header> -->
-<main class="max-w-7xl mx-auto px-4 pt-24 pb-12">
-<div class="mb-8">
-<h1 class="text-3xl font-bold text-gray-900">论文集</h1>
-<p class="mt-2 text-gray-600">探索前沿科技研究成果</p>
-</div>
-<div class="grid grid-cols-3 gap-6">
-<div class="card bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer" onclick="openModal('paper1')">
-<div class="aspect-w-16 aspect-h-9">
-<img src="images/perder1.jpg" alt="论文封面" class="w-full h-full object-cover">
-</div>
-<div class="p-6">
-<h3 class="text-lg font-semibold text-gray-900 mb-2">量子计算在机器学习中的应用研究</h3>
-<p class="text-gray-600 text-sm mb-4">本研究探讨了量子计算技术在深度学习模型优化中的创新应用，提出了一种新型量子-经典混合算法。</p>
-<div class="flex items-center text-sm text-gray-500">
-<i class="fas fa-user-circle mr-2"></i>
-<span>*** 教授</span>
-<span class="mx-2">|</span>
-<i class="fas fa-calendar-alt mr-2"></i>
-<span>2024-01-15</span>
-</div>
-</div>
-</div>
-<div class="card bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer" onclick="openModal('paper2')">
-<div class="aspect-w-16 aspect-h-9">
-<img src="images/perder1.jpg" alt="论文封面" class="w-full h-full object-cover">
-</div>
-<div class="p-6">
-<h3 class="text-lg font-semibold text-gray-900 mb-2">大规模语言模型的知识蒸馏技术研究</h3>
-<p class="text-gray-600 text-sm mb-4">针对大规模语言模型在实际应用中的效率问题，提出了一种新型知识蒸馏框架。</p>
-<div class="flex items-center text-sm text-gray-500">
-<i class="fas fa-user-circle mr-2"></i>
-<span>*** 副教授</span>
-<span class="mx-2">|</span>
-<i class="fas fa-calendar-alt mr-2"></i>
-<span>2024-01-10</span>
-</div>
-</div>
-</div>
-<div class="card bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer" onclick="openModal('paper3')">
-<div class="aspect-w-16 aspect-h-9">
-<img src="images/perder1.jpg" alt="论文封面" class="w-full h-full object-cover">
-</div>
-<div class="p-6">
-<h3 class="text-lg font-semibold text-gray-900 mb-2">基于图神经网络的社交网络分析方法</h3>
-<p class="text-gray-600 text-sm mb-4">本文提出了一种新型图神经网络架构，用于大规模社交网络中的用户行为分析。</p>
-<div class="flex items-center text-sm text-gray-500">
-<i class="fas fa-user-circle mr-2"></i>
-<span>*** 研究员</span>
-<span class="mx-2">|</span>
-<i class="fas fa-calendar-alt mr-2"></i>
-<span>2024-01-05</span>
-</div>
-</div>
-</div>
-</div>
-</main>
-<div id="modal" class="modal fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center">
-<div class="modal-content bg-white rounded-lg w-full max-w-6xl max-h-[90vh] overflow-hidden mx-4">
-<div class="p-6 border-b border-gray-200 flex justify-between items-center sticky top-0 bg-white z-10">
-<h2 id="modalTitle" class="text-xl font-semibold text-gray-900"></h2>
-<button onclick="closeModal()" class="text-gray-400 hover:text-gray-500">
-<i class="fas fa-times text-xl"></i>
-</button>
-</div>
-<div class="h-[calc(90vh-80px)] overflow-y-auto custom-scrollbar p-6">
-<div class="mb-8">
-<div class="grid grid-cols-3 gap-4">
-<img src="images/perder1.jpg" alt="论文示意图" class="w-full rounded-lg">
-<img src="images/detail.jpg" alt="研究数据" class="w-full rounded-lg">
-<img src="images/detail.jpg" alt="研究方法" class="w-full rounded-lg">
-</div>
-</div>
-<div id="modalContent" class="animate-slide-in"></div>
-</div>
-</div>
-</div>
-{% include "footer.njk" %}
-<!-- <footer class="bg-gray-900 text-white py-12">
-    <div class="max-w-7xl mx-auto px-4">
-        <div class="grid grid-cols-4 gap-8">
-            <div>
-                <a href="/" class="font-['Pacifico'] text-2xl text-white mb-6 block">logo</a>
-                <p class="text-gray-400">启元脑芯片实验室致力于脑机接口技术研发与创新，打造智能科技未来。</p>
-            </div>
-            <div>
-                <h4 class="text-lg font-semibold mb-4">快速链接</h4>
-                <ul class="space-y-2 text-gray-400">
-                    <li><a href="index" class="hover:text-white">首页</a></li>
-                    <li><a href="news" class="hover:text-white">新闻</a></li>
-                    <li><a href="/" class="hover:text-white">论文集</a></li>
-                    <li><a href="teamMember" class="hover:text-white">成员</a></li>
-                    <li><a href="collaboration" class="hover:text-white">合作</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-lg font-semibold mb-4">合作方式</h4>
-                <ul class="space-y-2 text-gray-400">
-                    <li>产学研合作</li>
-                    <li>技术授权</li>
-                    <li>人才培养</li>
-                    <li>项目合作</li>
-                </ul>
-            </div>
-            <div>
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-['Pacifico'] text-primary">logo</a>
+                </div>
+                <nav class="flex space-x-8">
+                    <a href="index" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">首页</a>
+                    <a href="news" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">新闻</a>
+                    <a href="#" class="text-[#0066CC] px-3 py-2 text-sm font-medium">论文集</a>
+                    <a href="teamMember" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">成员</a>
+                    <a href="collaboration"
+                        class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">合作</a>
+                </nav>
             </div>
         </div>
-        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>© 2024 启元脑芯片实验室. 保留所有权利.</p>
+    </header>
+    <main class="max-w-7xl mx-auto px-4 pt-24 pb-12">
+        <div class="mb-8">
+            <h1 class="text-3xl font-bold text-gray-900">论文集</h1>
+            <p class="mt-2 text-gray-600">探索前沿科技研究成果</p>
+        </div>
+        <div class="grid grid-cols-3 gap-6">
+            <div class="card bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer"
+                onclick="openModal('paper1')">
+                <div class="aspect-w-16 aspect-h-9">
+                    <img src="images/perderT.jpg" alt="论文封面" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">VToT：通过LLMs使用思维树提示自动生成Verilog</h3>
+                    <p class="text-gray-600 text-sm mb-4">本文被CCFB类会议，2025'DATE（Design, Automation and Test in Europe
+                        Conference）</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-user-circle mr-2"></i>
+                        <span>周英杰、陈任之</span>
+                        <span class="mx-2">|</span>
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        <span>2024-9-23</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer"
+                onclick="openModal('paper2')">
+                <div class="aspect-w-16 aspect-h-9">
+                    <img src="images/perder2.jpg" alt="论文封面" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">大规模语言模型的知识蒸馏技术研究</h3>
+                    <p class="text-gray-600 text-sm mb-4">针对大规模语言模型在实际应用中的效率问题，提出了一种新型知识蒸馏框架。</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-user-circle mr-2"></i>
+                        <span>*** 副教授</span>
+                        <span class="mx-2">|</span>
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        <span>2024-01-10</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer"
+                onclick="openModal('paper3')">
+                <div class="aspect-w-16 aspect-h-9">
+                    <img src="images/perder3.jpg" alt="论文封面" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">基于图神经网络的社交网络分析方法</h3>
+                    <p class="text-gray-600 text-sm mb-4">本文提出了一种新型图神经网络架构，用于大规模社交网络中的用户行为分析。</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-user-circle mr-2"></i>
+                        <span>*** 研究员</span>
+                        <span class="mx-2">|</span>
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        <span>2024-01-05</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- <div id="modal" class="modal fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center">
+        <div class="modal-content bg-white rounded-lg w-full max-w-6xl max-h-[90vh] overflow-hidden mx-4">
+            <div class="p-6 border-b border-gray-200 flex justify-between items-center sticky top-0 bg-white z-10">
+                <h2 id="modalTitle" class="text-xl font-semibold text-gray-900"></h2>
+                <button onclick="closeModal()" class="text-gray-400 hover:text-gray-500">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <div class="h-[calc(90vh-80px)] overflow-y-auto custom-scrollbar p-6">
+                <div class="mb-8">
+                    <div class="grid grid-cols-3 gap-4">
+                        <img src="images/perder0.png" alt="论文示意图" class="w-full rounded-lg">
+                        <img src="images/results.png" alt="研究数据" class="w-full rounded-lg">
+                        <img src="images/methodology.png" alt="研究方法" class="w-full rounded-lg">
+                    </div>
+                </div>
+                <div id="modalContent" class="animate-slide-in"></div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Modal -->
+    <div id="modal" class="modal fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center">
+        <div class="modal-content bg-white rounded-lg w-full max-w-6xl max-h-[90vh] overflow-hidden mx-4 relative"> <!-- 添加relative定位 -->
+            <div class="p-6 border-b border-gray-200 sticky top-0 bg-white z-10">
+                <h2 id="modalTitle" class="text-xl font-semibold text-gray-900 text-center mr-8"></h2> <!-- 添加右侧间距 -->
+                <!-- 修改关闭按钮定位 -->
+                <button onclick="closeModal()" 
+                        class="absolute top-4 right-4 text-gray-400 hover:text-gray-500 transition-colors">
+                    <i class="fas fa-times text-2xl"></i> <!-- 适当调大图标 -->
+                </button>
+            </div>
+            <div class="h-[calc(90vh-80px)] overflow-y-auto custom-scrollbar p-6">
+                <div id="modalImages" class="mb-8"></div>
+                <div id="modalContent" class="animate-slide-in"></div>
+            </div>
         </div>
     </div>
-</footer> -->
-<script>
-const papers = {
-paper1: {
-title: "量子计算在机器学习中的应用研究",
-content: `
+    <div id="imageOverlay" class="fixed inset-0 bg-black bg-opacity-90 hidden z-[999] flex items-center justify-center p-4">
+        <div class="relative max-w-full max-h-full">
+            <img id="expandedImg" class="max-h-[90vh] mx-auto rounded-lg shadow-xl" alt="放大图片">
+            <button onclick="closeImage()" class="absolute -top-8 right-0 text-white hover:text-gray-300 transition-colors">
+                <i class="fas fa-times text-3xl"></i>
+            </button>
+        </div>
+    </div>
+    <div id="magnifier" class="magnifier">
+        <img id="magnifierImage" src="" alt="放大镜视图">
+    </div>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-4 gap-8">
+                <div>
+                    <a href="/" class="font-['Pacifico'] text-2xl text-white mb-6 block">logo</a>
+                    <p class="text-gray-400">启元脑芯片实验室致力于脑机接口技术研发与创新，打造智能科技未来。</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">快速链接</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index" class="hover:text-white">首页</a></li>
+                        <li><a href="news" class="hover:text-white">新闻</a></li>
+                        <li><a href="/" class="hover:text-white">论文集</a></li>
+                        <li><a href="teamMember" class="hover:text-white">成员</a></li>
+                        <li><a href="collaboration" class="hover:text-white">合作</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">合作方式</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>产学研合作</li>
+                        <li>技术授权</li>
+                        <li>人才培养</li>
+                        <li>项目合作</li>
+                    </ul>
+                </div>
+                <div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2024 启元脑芯片实验室. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const papers = {
+            paper1: {
+                title: "VToT：通过LLMs使用思维树提示自动生成Verilog",
+                images: ["images/perder0.png",  "images/methodology.png","images/results.png"],
+                content: `
 <div class="space-y-6">
 <div class="flex items-center space-x-4 text-sm text-gray-500 mb-6">
-<div><i class="fas fa-user-circle mr-2"></i>*** 教授</div>
-<div><i class="fas fa-calendar-alt mr-2"></i>2024-01-15</div>
-<div><i class="fas fa-tag mr-2"></i>量子计算, 机器学习</div>
+<div><i class="fas fa-user-circle mr-2"></i>周英杰、陈任之</div>
+<div><i class="fas fa-calendar-alt mr-2"></i>2024-9-23</div>
 </div>
 <div class="prose max-w-none">
 <h3 class="text-lg font-semibold mb-4">摘要</h3>
-<p class="mb-6">本研究探讨了量子计算技术在深度学习模型优化中的创新应用，提出了一种新型量子-经典混合算法。通过实验证明，该方法在特定任务上可以显著提升模型性能和训练效率。</p>
+<p class="mb-6">本文提出了一种结构化的提示方法，显著提高LLM自动生成Verilog代码的正确性。
+本文生成分析并指出常规思维链(CoT)提示方法在Verilog生成任务中的不一致性；提出了VToT方法，将思维树(ToT, Tree of Thought)与Verilog生成任务相结合；通过在提示中嵌入分层约束、为LLM提供思考路径，生成更符合用户需求的Verilog代码，提高了代码生成任务的正确率。</p>
 <h3 class="text-lg font-semibold mb-4">研究背景</h3>
-<p class="mb-6">随着量子计算技术的快速发展，其在机器学习领域的应用潜力日益显现。本研究旨在探索量子计算在深度学习模型训练和优化过程中的具体应用方案。</p>
+<p class="mb-6">随着大型语言模型（LLM）的能力不断发展，业界越发关注如何利用LLM辅助硬件设计。虽然LLM在生成程序设计语言时例如Python时表现出较高的正确性，但生成的Verilog却存在功能正确性与语法正确性不足的问题。
+尽管前序研究尝试将CoT等提示方法用于Verilog生成任务，但CoT的顺序化思维与Verilog硬件描述语言的并行性具有较大的不一致性。</p>
 <h3 class="text-lg font-semibold mb-4">研究方法</h3>
-<p class="mb-6">我们提出了一种新型的量子-经典混合优化算法，该算法充分利用量子计算的并行性和经典计算的稳定性，实现了模型训练过程的优化。具体包括：</p>
+<p class="mb-6">基于链式思维与硬件描述语言的不一致性，本文提出VToT方法：</p>
 <ul class="list-disc pl-6 mb-6">
-<li>量子电路设计与优化</li>
-<li>混合训练策略的制定</li>
-<li>参数更新机制的改进</li>
+<li>VToT方法通过推理、生成两个阶段，首先明确设计约束的具体内容；之后再生成符合约束的代码。</li>
+<li>VToT是一种结构化的提示方法，将复杂大规模设计拆分为多个模块，精细化LLM的思考粒度。</li>
+<li>在VerilogEval和RTLLM基准测试上的实验结果表明，VToT提示增强了生成代码的语法和功能正确性。</li>
 </ul>
 <h3 class="text-lg font-semibold mb-4">实验结果</h3>
 <p class="mb-6">在多个标准数据集上的实验表明，我们提出的方法相比传统方法具有显著优势：</p>
 <ul class="list-disc pl-6 mb-6">
-<li>训练时间减少 35%</li>
-<li>模型准确率提升 5.2%</li>
-<li>计算资源利用率提高 40%</li>
+<li>在RTLLM 测试基准上，VToT在pass@5达到了75.9%的正确率，比基座模型提高了10.4%。</li>
+<li>在VerilogEval 测试基准上，VToT达到了当时最先进的性能，在pass@1的正确率为52.4%（提高了8.9%），在pass@5时的正确率为65.4%（提高了9.6%）。</li>
 </ul>
 <h3 class="text-lg font-semibold mb-4">结论与展望</h3>
-<p>本研究的成果为量子计算在机器学习领域的应用提供了新的思路和方法，后续我们将继续探索更多可能的应用场景和优化方案。</p>
+<p>随着LLM的发展，模型的推理能力越来越受到关注，在此前发布的VToT工作，是利用领域知识强化LLM在Verilog生成推理能力的探索性工作。</p>
+<p>未来在数据增强下，不断提高模型能力，有助于LLM越来越擅长像专业硬件工程师一样思考，进而促进LLM辅助硬件设计的能力不断进步。</p>
 </div>
 </div>
 `
-},
-paper2: {
-title: "大规模语言模型的知识蒸馏技术研究",
-content: `
+            },
+            paper2: {
+                title: "大规模语言模型的知识蒸馏技术研究",
+                images: ["images/perder0.png", "images/results.png", "images/methodology.png"],
+                content: `
 <div class="space-y-6">
 <div class="flex items-center space-x-4 text-sm text-gray-500 mb-6">
 <div><i class="fas fa-user-circle mr-2"></i>*** 副教授</div>
@@ -213,10 +248,11 @@ content: `
 </div>
 </div>
 `
-},
-paper3: {
-title: "基于图神经网络的社交网络分析方法",
-content: `
+            },
+            paper3: {
+                title: "基于图神经网络的社交网络分析方法",
+                images: ["images/perder0.png", "images/results.png", "images/methodology.png"],
+                content: `
 <div class="space-y-6">
 <div class="flex items-center space-x-4 text-sm text-gray-500 mb-6">
 <div><i class="fas fa-user-circle mr-2"></i>*** 研究员</div>
@@ -247,10 +283,10 @@ content: `
 </div>
 </div>
 `
-},
-paper4: {
-title: "脑机接口技术的突破性研究",
-content: `
+            },
+            paper4: {
+                title: "脑机接口技术的突破性研究",
+                content: `
 <div class="space-y-6">
 <div class="flex items-center space-x-4 text-sm text-gray-500 mb-6">
 <div><i class="fas fa-user-circle mr-2"></i>*** 教授</div>
@@ -281,10 +317,10 @@ content: `
 </div>
 </div>
 `,
-},
-paper5: {
-title: "智能机器人控制系统优化",
-content: `
+            },
+            paper5: {
+                title: "智能机器人控制系统优化",
+                content: `
 <div class="space-y-6">
 <div class="flex items-center space-x-4 text-sm text-gray-500 mb-6">
 <div><i class="fas fa-user-circle mr-2"></i>陈海洋 副教授</div>
@@ -315,10 +351,10 @@ content: `
 </div>
 </div>
 `,
-},
-paper6: {
-title: "边缘计算网络架构研究",
-content: `
+            },
+            paper6: {
+                title: "边缘计算网络架构研究",
+                content: `
 <div class="space-y-6">
 <div class="flex items-center space-x-4 text-sm text-gray-500 mb-6">
 <div><i class="fas fa-user-circle mr-2"></i>吴云帆 研究员</div>
@@ -349,25 +385,159 @@ content: `
 </div>
 </div>
 `
-}
-};
+            }
+        };
+        // function openModal(paperId) {
+        //     const paper = papers[paperId];
+        //     document.getElementById('modalTitle').textContent = paper.title;
+        //     document.getElementById('modalContent').innerHTML = paper.content;
+        //     document.getElementById('modal').classList.remove('hidden');
+        //     document.body.style.overflow = 'hidden';
+        // }
+        // function closeModal() {
+        //     document.getElementById('modal').classList.add('hidden');
+        //     document.body.style.overflow = 'auto';
+        //     document.getElementById('modalContent').scrollTop = 0;
+        // }
+        // document.getElementById('modal').addEventListener('click', function (e) {
+        //     if (e.target === this) {
+        //         closeModal();
+        //     }
+        // });
+        // 修改后的openModal函数
 function openModal(paperId) {
-const paper = papers[paperId];
-document.getElementById('modalTitle').textContent = paper.title;
-document.getElementById('modalContent').innerHTML = paper.content;
-document.getElementById('modal').classList.remove('hidden');
-document.body.style.overflow = 'hidden';
+    const paper = papers[paperId];
+    const modalImages = document.getElementById('modalImages');
+
+    modalImages.innerHTML = `
+        <div class="grid grid-cols-3 gap-4">
+            ${paper.images.map((img, index) => `
+                <img src="${img}" 
+                     alt="论文示意图" 
+                     class="w-full rounded-lg hover:scale-105 transition-transform duration-300 cursor-zoom-in"
+                     onclick="expandImage(event, ${index}, '${paperId}')">
+            `).join('')}
+        </div>
+    `;
+
+    document.getElementById('modalTitle').textContent = paper.title;
+    document.getElementById('modalContent').innerHTML = paper.content;
+    document.getElementById('modal').classList.remove('hidden');
+    document.documentElement.style.overflow = 'hidden'; // 新增
+    document.body.style.overflow = 'hidden';
 }
-function closeModal() {
-document.getElementById('modal').classList.add('hidden');
-document.body.style.overflow = 'auto';
-document.getElementById('modalContent').scrollTop = 0;
+
+// 新增图片放大功能函数
+// function expandImage(event, index, paperId) {
+//     event.stopPropagation();
+//     const paper = papers[paperId];
+//     const imageUrl = paper.images[index];
+    
+//     const overlay = document.getElementById('imageOverlay');
+//     const expandedImg = document.getElementById('expandedImg');
+    
+//     expandedImg.src = imageUrl;
+//     overlay.classList.remove('hidden');
+//     document.body.style.overflow = 'hidden';
+// }
+function expandImage(event, index, paperId) {
+    event.stopPropagation();
+    const paper = papers[paperId];
+    const imageUrl = paper.images[index];
+    
+    const overlay = document.getElementById('imageOverlay');
+    const expandedImg = document.getElementById('expandedImg');
+    
+    // 初始化缩放状态
+    let scale = 1;
+    expandedImg.style.transform = `scale(${scale})`;
+
+    // 加载图片
+    expandedImg.src = imageUrl;
+    overlay.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+
+    // 滚轮缩放处理函数
+    const handleWheel = (e) => {
+        e.preventDefault();
+        const delta = e.deltaY > 0 ? 0.9 : 1.1;
+        scale = Math.min(Math.max(0.5, scale * delta), 3); // 限制缩放范围0.5-3倍
+        expandedImg.style.transform = `scale(${scale})`;
+        expandedImg.style.transformOrigin = `${e.offsetX/expandedImg.offsetWidth*100}% ${e.offsetY/expandedImg.offsetHeight*100}%`;
+    };
+
+    // 添加滚轮事件监听
+    expandedImg.addEventListener('wheel', handleWheel);
+
+    // 点击关闭处理
+    expandedImg.onclick = function(e) {
+        if (scale !== 1) {
+            scale = 1;
+            expandedImg.style.transform = 'scale(1)';
+        } else {
+            closeImage();
+        }
+    };
+
+    // 关闭时清理事件监听
+    overlay._cleanup = () => {
+        expandedImg.removeEventListener('wheel', handleWheel);
+        delete overlay._cleanup;
+    };
 }
-document.getElementById('modal').addEventListener('click', function(e) {
-if (e.target === this) {
-closeModal();
+
+function closeImage() {
+    const overlay = document.getElementById('imageOverlay');
+    overlay.classList.add('hidden');
+    document.body.style.overflow = 'auto';
+    
+    // 重置缩放状态
+    const expandedImg = document.getElementById('expandedImg');
+    expandedImg.style.transform = 'scale(1)';
+    
+    // 执行清理
+    if (overlay._cleanup) overlay._cleanup();
 }
+// 新增关闭图片函数
+// function closeImage() {
+//     document.getElementById('imageOverlay').classList.add('hidden');
+//     document.body.style.overflow = 'auto';
+// }
+function closeImage() {
+    document.getElementById('imageOverlay').classList.add('hidden');
+    document.body.style.overflow = 'auto';
+    const expandedImg = document.getElementById('expandedImg');
+    expandedImg.classList.remove('zoomed');
+    document.getElementById('magnifier').style.display = 'none';
+}
+// 添加窗口resize监听
+window.addEventListener('resize', () => {
+    if (!document.getElementById('imageOverlay').classList.contains('hidden')) {
+        closeImage();
+    }
 });
-</script>
+
+// 点击外部关闭图片
+document.getElementById('imageOverlay').addEventListener('click', function(e) {
+    if (e.target === this) closeImage();
+});
+
+// 添加ESC键关闭支持
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !document.getElementById('imageOverlay').classList.contains('hidden')) {
+        closeImage();
+    }
+});
+
+// 修改后的closeModal函数
+function closeModal() {
+    document.getElementById('modal').classList.add('hidden');
+    closeImage(); // 同时关闭可能打开的图片
+    document.documentElement.style.overflow = 'auto'; // 新增
+    document.body.style.overflow = 'auto';
+    document.getElementById('modalContent').scrollTop = 0;
+}
+    </script>
 </body>
+
 </html>

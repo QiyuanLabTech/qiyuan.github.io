@@ -58,3 +58,95 @@ body {
     .modal-content {
     overscroll-behavior: contain;
     }
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 8px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #cbd5e0;
+        border-radius: 4px;
+    }
+    
+    /* 卡片动画 */
+    .card {
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    }
+    
+    /* 模态框动画 */
+    .animate-slide-in {
+        animation: slideIn 0.3s ease-out;
+    }
+    
+    @keyframes slideIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    /* 添加到css/proceedings.css */
+#imageOverlay {
+    backdrop-filter: blur(8px);
+}
+
+#expandedImg {
+    animation: imageZoom 0.3s ease-out;
+}
+
+@keyframes imageZoom {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 640px) {
+    #imageOverlay img {
+        max-width: 95%;
+        max-height: 80vh;
+    }
+}
+/* 完全隐藏滚动条 */
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* #expandedImg {
+    cursor: zoom-in;
+    transition: transform 0.3s;
+} */
+
+#expandedImg {
+    cursor: zoom-in;
+    transition: transform 0.3s;
+    max-width: 90%;
+    max-height: 80vh;
+}
+
+/* #expandedImg.grabbing {
+    cursor: grabbing;
+} */
+
+/* .image-drag-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+} */
+/* 新增样式到css/proceedings.css */
+.image-drag-container {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+#expandedImg {
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+}
+#expandedImg.zoomed {
+    cursor: grab;
+}
