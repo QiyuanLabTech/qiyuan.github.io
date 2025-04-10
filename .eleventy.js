@@ -19,8 +19,6 @@ module.exports = function (eleventyConfig) {
   ["css", "js", "images", "_includes"].forEach(dir => {
     eleventyConfig.addPassthroughCopy(`src/${dir}`);
   });
-    // 添加 Markdown 渲染支持
-    // eleventyConfig.setLibrary("md", markdownIt());
   // 复制静态资源（CSS、JS）到输出目录
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/js");
@@ -34,10 +32,9 @@ module.exports = function (eleventyConfig) {
       output: "docs",  // 输出文件夹
       includes: "_includes", // 模板文件存放目录
     },
+    // pathPrefix: "/",
     templateFormats: ["html", "njk","md"],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
-    // dataTemplateEngine: "njk",
-    passthroughFileCopy: true
   };
 };
