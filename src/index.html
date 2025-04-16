@@ -45,9 +45,37 @@
 <div class="absolute inset-0 bg-black bg-opacity-50"></div>
 <div class="relative max-w-7xl mx-auto px-4 h-full flex items-center">
 <div class="hero-text text-white max-w-3xl">
-<h1 class="text-5xl font-bold mb-6">我们正在进行以脑为基础的计算领域的开创性研究。</h1>
-<p class="text-xl mb-8">通过创新的芯片设计和神经架构研究来拓展神经形态工程和人工智能的前沿领域。</p>
+<h1 class="text-5xl font-bold mb-6">我们正全力推进大模型助力芯片设计、类脑芯片与算法的创新融合之旅。</h1>
+<p class="text-xl mb-8">依托大模型辅助设计，深耕类脑芯片设计与类脑算法应用的创新前沿。</p>
 </div>
+</div>
+<!-- Navigation Bar -->
+<div class="absolute bottom-8 left-0 right-0 flex justify-center">
+    <div class="w-full max-w-4xl bg-white/20 backdrop-blur-sm rounded-t-lg rounded-b-lg px-8 py-4 mb-[5px]">
+        <div class="flex justify-between">
+            <!-- Nav Item 1 -->
+            <div class="nav-item flex flex-col items-center cursor-pointer p-2 rounded-lg transition-colors duration-200 relative">
+                <div class="nav-icon text-white mb-2">
+                    <i class="fas fa-microchip text-3xl"></i>
+                </div>
+                <span class="nav-text text-white text-sm font-medium">大模型辅助芯片设计</span>
+            </div>
+            <!-- Nav Item 2 -->
+            <div class="nav-item flex flex-col items-center cursor-pointer p-2 rounded-lg transition-colors duration-200 relative">
+                <div class="nav-icon text-white mb-2">
+                    <i class="fas fa-brain text-3xl"></i>
+                </div>
+                <span class="nav-text text-white text-sm font-medium">类脑芯片设计与实现</span>
+            </div>
+            <!-- Nav Item 3 -->
+            <div class="nav-item flex flex-col items-center cursor-pointer p-2 rounded-lg transition-colors duration-200 relative">
+                <div class="nav-icon text-white mb-2">
+                    <i class="fas fa-project-diagram text-3xl"></i>
+                </div>
+                <span class="nav-text text-white text-sm font-medium">类脑算法与应用</span>
+            </div>
+        </div>
+    </div>
 </div>
 </section>
 <!-- Main Content -->
@@ -66,8 +94,7 @@
   <div class="relative">
   <div class="absolute top-0 left-0 right-0 h-[5px] bg-transparent group-hover:bg-primary transition-colors duration-300"></div>
   <div class="p-6  transition-colors duration-300">
-  <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">ASNPC: An Automated Generation Framework for
-    SNN and Neuromorphic Processor Co-design</h3>
+  <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">ASNPC：面向SNN和类脑处理器协同设计的自动化生成框架</h3>
     <div class="flex items-center text-sm text-gray-500">
         <i class="fas fa-calendar-alt mr-2"></i>
         <span>2025-03-19</span>
@@ -272,7 +299,7 @@ document.querySelectorAll('button').forEach(btn => {
 btn.classList.remove('hover:bg-white/10');
 btn.classList.add('hover:bg-gray-100');
 });
-document.querySelector('.logo-text').classList.remove('text-white');
+// document.querySelector('.logo-text').classList.remove('text-white');
 } else {
 header.classList.add('bg-transparent');
 header.classList.remove('bg-white', 'shadow-sm');
@@ -288,7 +315,7 @@ document.querySelectorAll('button').forEach(btn => {
 btn.classList.add('hover:bg-white/10');
 btn.classList.remove('hover:bg-gray-100');
 });
-document.querySelector('.logo-text').classList.remove('text-white');
+// document.querySelector('.logo-text').classList.remove('text-white');
 }
 }
 window.addEventListener('scroll', checkVisibility);
