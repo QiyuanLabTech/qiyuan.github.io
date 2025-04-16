@@ -58,3 +58,46 @@ body {
     .modal-content {
     overscroll-behavior: contain;
     }
+    #modalTitle {
+        text-align: center;
+        width: 100%;
+    }
+    .small-text {
+        font-size: 1rem; /* 或者其他你想要的大小 */
+    }
+    .modal-content {
+        position: relative;
+        max-width: 90%;
+        max-height: 90%;
+        background-color: black; /* 设置黑色背景 */
+    }
+    
+    #modalImage {
+        width: 100%;
+        height: auto;
+        transition: transform 0.2s ease;
+    }
+    
+    button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: white;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        opacity: 0.7;
+    }
+    .scale-100 {
+        transform: scale(1);
+        transition: transform 0.3s ease; /* 添加过渡效果 */
+    }
+    
+    .scale-150 {
+        transform: scale(1.5); /* 放大 1.5 倍 */
+        transition: transform 0.3s ease; /* 添加过渡效果 */
+    }

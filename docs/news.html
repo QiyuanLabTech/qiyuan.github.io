@@ -1,176 +1,213 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>启元实验室 - 新闻</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-<link rel="stylesheet" href="css/news.css">
-<link rel="stylesheet" href="css/global.css">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="js/tailwind-config.js"></script>
-<script src="js/news.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>启元实验室 - 新闻</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/global.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
+    <script src="js/news.js"></script>
 </head>
+
 <body class="bg-gray-50">
-<header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
-<div class="max-w-7xl mx-auto px-4">
-<div class="flex items-center justify-between h-16">
-<div class="flex items-center">
-<a href="#" class="text-2xl font-['Pacifico'] text-primary">logo</a>
-</div>
-<nav class="flex space-x-8">
-<a href="index" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">首页</a>
-<a href="#" class="text-[#0066CC] px-3 py-2 text-sm font-medium">新闻</a>
-<a href="proceedings" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">论文集</a>
-<a href="teamMember" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">成员</a>
-<a href="collaboration" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">合作</a>
-</nav>
-</div>
-</div>
-</header>
-<main class="max-w-7xl mx-auto px-4 pt-24 pb-12">
-<div class="mb-8">
-<h1 class="text-3xl font-bold text-gray-900">新闻中心</h1>
-<p class="mt-2 text-gray-600">探索前沿科技研究成果</p>
-</div>
-<div class="grid grid-cols-3 gap-6">
-<div class="card bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer" onclick="openModal('paper1')">
-<div class="aspect-w-16 aspect-h-9">
-<img src="https://ai-public.mastergo.com/ai/img_res/266b0857abcd928f000e17aa2767fe39.jpg" alt="实验室" class="w-full h-full object-cover">
-</div>
-<div class="p-6">
-<h3 class="text-lg font-semibold text-gray-900 mb-2">启元脑芯片突破性研究成果发布</h3>
-<p class="text-gray-600 text-sm mb-4">实验室团队在脑机接口领域取得重大突破，新型神经芯片实现了更高效的信息处理能力。</p>
-<div class="flex items-center text-sm text-gray-500">
-<i class="fas fa-calendar-alt mr-2"></i>
-<span>2024-01-15</span>
-</div>
-</div>
-</div>
-<div class="card bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer" onclick="openModal('paper2')">
-<div class="aspect-w-16 aspect-h-9">
-<img src="https://ai-public.mastergo.com/ai/img_res/2c7295bea44f29b6da2a930299c3db0a.jpg" alt="神经网络" class="w-full h-full object-cover">
-</div>
-<div class="p-6">
-<h3 class="text-lg font-semibold text-gray-900 mb-2">国际合作项目启动仪式圆满举行</h3>
-<p class="text-gray-600 text-sm mb-4">我们与多个国际顶尖研究机构建立合作关系，共同推进脑科学研究的发展。</p>
-<div class="flex items-center text-sm text-gray-500">
-<i class="fas fa-calendar-alt mr-2"></i>
-<span>2024-01-10</span>
-</div>
-</div>
-</div>
-<div class="card bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer" onclick="openModal('paper3')">
-<div class="aspect-w-16 aspect-h-9">
-<img src="https://ai-public.mastergo.com/ai/img_res/9d0836481b950edcd4419ca81b7a6e3a.jpg" alt="学术会议" class="w-full h-full object-cover">
-</div>
-<div class="p-6">
-<h3 class="text-lg font-semibold text-gray-900 mb-2">2024 脑科学前沿论坛成功举办</h3>
-<p class="text-gray-600 text-sm mb-4">来自全球的顶尖科学家齐聚一堂，共同探讨脑科学研究的最新进展。</p>
-<div class="flex items-center text-sm text-gray-500">
-<i class="fas fa-calendar-alt mr-2"></i>
-<span>2024-01-05</span>
-</div>
-</div>
-</div>
-</div>
-</main>
-<div id="modal" class="modal fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center">
-<div class="modal-content bg-white rounded-lg w-full max-w-6xl max-h-[90vh] overflow-hidden mx-4">
-<div class="p-6 border-b border-gray-200 flex justify-between items-center sticky top-0 bg-white z-10">
-<h2 id="modalTitle" class="text-xl font-semibold text-gray-900"></h2>
-<button onclick="closeModal()" class="text-gray-400 hover:text-gray-500">
-<i class="fas fa-times text-xl"></i>
-</button>
-</div>
-<div class="h-[calc(90vh-80px)] overflow-y-auto custom-scrollbar p-6">
-<div class="mb-8">
-<div class="grid grid-cols-3 gap-4">
-<img src="https://ai-public.mastergo.com/ai/img_res/28193acc4d0b8f13709eaabebcc52920.jpg" alt="论文示意图" class="w-full rounded-lg">
-<img src="https://ai-public.mastergo.com/ai/img_res/4523fe9eed9e0968821c62317ce2b12b.jpg" alt="研究数据" class="w-full rounded-lg">
-<img src="https://ai-public.mastergo.com/ai/img_res/146c7bb14900aa1751e924d4f771c74d.jpg" alt="研究方法" class="w-full rounded-lg">
-</div>
-</div>
-<div id="modalContent" class="animate-slide-in"></div>
-</div>
-</div>
-</div>
-<footer class="bg-gray-900 text-white py-12">
-    <div class="max-w-7xl mx-auto px-4">
-        <div class="grid grid-cols-4 gap-8">
-            <div>
-                <a href="/" class="font-['Pacifico'] text-2xl text-white mb-6 block">logo</a>
-                <p class="text-gray-400">启元脑芯片实验室致力于脑机接口技术研发与创新，打造智能科技未来。</p>
-            </div>
-            <div>
-                <h4 class="text-lg font-semibold mb-4">快速链接</h4>
-                <ul class="space-y-2 text-gray-400">
-                    <li><a href="index" class="hover:text-white">首页</a></li>
-                    <li><a href="/" class="hover:text-white">新闻</a></li>
-                    <li><a href="proceedings" class="hover:text-white">论文集</a></li>
-                    <li><a href="teamMember" class="hover:text-white">成员</a></li>
-                    <li><a href="collaboration" class="hover:text-white">合作</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-lg font-semibold mb-4">合作方式</h4>
-                <ul class="space-y-2 text-gray-400">
-                    <li>产学研合作</li>
-                    <li>技术授权</li>
-                    <li>人才培养</li>
-                    <li>项目合作</li>
-                </ul>
-            </div>
-            <div>
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-['Pacifico'] text-primary">logo</a>
+                </div>
+                <nav class="flex space-x-8">
+                    <a href="index" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">首页</a>
+                    <a href="#" class="text-[#0066CC] px-3 py-2 text-sm font-medium">新闻</a>
+                    <a href="proceedings" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">论文集</a>
+                    <a href="teamMember" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">成员</a>
+                    <a href="collaboration"
+                        class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">合作</a>
+                </nav>
             </div>
         </div>
-        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>© 2024 启元脑芯片实验室. 保留所有权利.</p>
+    </header>
+    <main class="max-w-7xl mx-auto px-4 pt-24 pb-12">
+        <div class="mb-8">
+            <h1 class="text-3xl font-bold text-gray-900">新闻中心</h1>
+            <p class="mt-2 text-gray-600">探索前沿科技研究成果</p>
+        </div>
+        <div class="grid grid-cols-3 gap-6">
+            <div class="card bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer"
+                onclick="openModal('paper1')">
+                <div class="aspect-w-16 aspect-h-9">
+                    <img src="images/Framework.png" alt="实验室"
+                        class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">ASNPC: An Automated Generation Framework for SNN and Neuromorphic Processor Co-design</h3>
+                    <!-- <p class="text-gray-600 text-sm mb-4">实验室团队在脑机接口领域取得重大突破，新型神经芯片实现了更高效的信息处理能力。</p> -->
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        <span>2025-03-19</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer"
+                onclick="openModal('paper2')">
+                <div class="aspect-w-16 aspect-h-9">
+                    <img src="https://ai-public.mastergo.com/ai/img_res/2c7295bea44f29b6da2a930299c3db0a.jpg" alt="神经网络"
+                        class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">国际合作项目启动仪式圆满举行</h3>
+                    <p class="text-gray-600 text-sm mb-4">我们与多个国际顶尖研究机构建立合作关系，共同推进脑科学研究的发展。</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        <span>2024-01-10</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer"
+                onclick="openModal('paper3')">
+                <div class="aspect-w-16 aspect-h-9">
+                    <img src="https://ai-public.mastergo.com/ai/img_res/9d0836481b950edcd4419ca81b7a6e3a.jpg" alt="学术会议"
+                        class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">2024 脑科学前沿论坛成功举办</h3>
+                    <p class="text-gray-600 text-sm mb-4">来自全球的顶尖科学家齐聚一堂，共同探讨脑科学研究的最新进展。</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        <span>2024-01-05</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="modal" class="modal fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center">
+        <div class="modal-content bg-white rounded-lg w-full max-w-6xl max-h-[90vh] overflow-hidden mx-4">
+            <div class="p-6 border-b border-gray-200 flex flex-col justify-between items-center sticky top-0 bg-white z-10">
+                <h2 id="modalTitle" class="text-xl font-semibold text-gray-900 mr-8">Your Title Here</h2>
+                <div class="flex flex-col items-center gap-4 mt-2">
+                    <span class="text-gray-500 text-sm text-center">Release Time: 2025-03-19</span>
+                </div>
+                <button onclick="closeModal()" class="text-gray-400 hover:text-gray-500">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <div class="h-[calc(90vh-80px)] overflow-y-auto custom-scrollbar p-6">
+                <div id="modalContent" class="animate-slide-in"></div>
+            </div>
+        </div>
+        <div id="imageModal" class="modal fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center">
+            <div class="modal-content bg-white rounded-lg overflow-hidden mx-4">
+                <img id="modalImage" src="" alt="Expanded Image" class="w-full h-auto scale-100"> <!-- 初始状态为 scale-100 -->
+            </div>
+            <button onclick="closeImageModal()" class="absolute top-1 right-1 text-white text-xl">
+                <i class="fas fa-times" style="font-size: 2rem;"></i>
+            </button>
         </div>
     </div>
-</footer>
-<script>
-const papers = {
-paper1: {
-title: "量子计算在机器学习中的应用研究",
-content: `
-<div class="space-y-6">
-<div class="flex items-center space-x-4 text-sm text-gray-500 mb-6">
-<div><i class="fas fa-user-circle mr-2"></i>*** 教授</div>
-<div><i class="fas fa-calendar-alt mr-2"></i>2024-01-15</div>
-<div><i class="fas fa-tag mr-2"></i>量子计算, 机器学习</div>
-</div>
-<div class="prose max-w-none">
-<h3 class="text-lg font-semibold mb-4">摘要</h3>
-<p class="mb-6">本研究探讨了量子计算技术在深度学习模型优化中的创新应用，提出了一种新型量子-经典混合算法。通过实验证明，该方法在特定任务上可以显著提升模型性能和训练效率。</p>
-<h3 class="text-lg font-semibold mb-4">研究背景</h3>
-<p class="mb-6">随着量子计算技术的快速发展，其在机器学习领域的应用潜力日益显现。本研究旨在探索量子计算在深度学习模型训练和优化过程中的具体应用方案。</p>
-<h3 class="text-lg font-semibold mb-4">研究方法</h3>
-<p class="mb-6">我们提出了一种新型的量子-经典混合优化算法，该算法充分利用量子计算的并行性和经典计算的稳定性，实现了模型训练过程的优化。具体包括：</p>
-<ul class="list-disc pl-6 mb-6">
-<li>量子电路设计与优化</li>
-<li>混合训练策略的制定</li>
-<li>参数更新机制的改进</li>
-</ul>
-<h3 class="text-lg font-semibold mb-4">实验结果</h3>
-<p class="mb-6">在多个标准数据集上的实验表明，我们提出的方法相比传统方法具有显著优势：</p>
-<ul class="list-disc pl-6 mb-6">
-<li>训练时间减少 35%</li>
-<li>模型准确率提升 5.2%</li>
-<li>计算资源利用率提高 40%</li>
-</ul>
-<h3 class="text-lg font-semibold mb-4">结论与展望</h3>
-<p>本研究的成果为量子计算在机器学习领域的应用提供了新的思路和方法，后续我们将继续探索更多可能的应用场景和优化方案。</p>
-</div>
-</div>
-`
-},
-paper2: {
-title: "大规模语言模型的知识蒸馏技术研究",
-content: `
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-4 gap-8">
+                <div>
+                    <a href="/" class="font-['Pacifico'] text-2xl text-white mb-6 block">logo</a>
+                    <p class="text-gray-400">启元脑芯片实验室致力于脑机接口技术研发与创新，打造智能科技未来。</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">快速链接</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index" class="hover:text-white">首页</a></li>
+                        <li><a href="/" class="hover:text-white">新闻</a></li>
+                        <li><a href="proceedings" class="hover:text-white">论文集</a></li>
+                        <li><a href="teamMember" class="hover:text-white">成员</a></li>
+                        <li><a href="collaboration" class="hover:text-white">合作</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">合作方式</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>产学研合作</li>
+                        <li>技术授权</li>
+                        <li>人才培养</li>
+                        <li>项目合作</li>
+                    </ul>
+                </div>
+                <div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2024 启元脑芯片实验室. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const papers = {
+            paper1: {
+                title: "ASNPC: An Automated Generation Framework for SNN and Neuromorphic Processor Co-design",
+                content: `
+              <div class="prose max-w-none">
+                    <div class="mb-12" id="conference-intro">
+                    <p class="small-text text-gray-800 leading-relaxed mb-6">
+                        2025年4月，我应邀前往法国里昂，参加 DATE 会议，同时作了题为"ASNPC: An Automated Generation Framework for SNN and Neuromorphic Processor Co-design"的学术汇报。
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        我于3月30日上午从上海出发，经12小时的飞机，于当地时间 3月30日晚上抵达法国里昂。我的文章题目为"ASNPC: An Automated Generation Framework for SNN and Neuromorphic Processor Co-design"。该研究为液态状态机（Liquid State Machine，LSM）设计了软硬件协同设计框架，来获取硬件开销与精度的权衡。
+                    </p>
+                </div>
+                <div class="rounded-xl overflow-hidden mb-12" id="conference-section">
+                    <img src="images/date.jpg"
+                        alt="DATE会议现场"
+                        class="w-1/2 h-[500px] object-contain object-top mx-auto">
+                    <p class="text-sm text-gray-500 mt-3 text-center">DATE 2025 会议现场</p>
+                </div>
+                <div class="mb-12">
+                    <h3 class="text-xl font-bold text-primary mb-4">研究背景与创新</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        物联网技术的普及彻底改变了实时数据采集和自主系统管理模式，然而在实际部署中暴露出一个核心挑战：多样化应用场景对高效能边缘计算日益增长的需求。尽管传统深度神经网络（DNN）具备合格的计算性能，但其高昂的计算复杂度与边缘设备严格的功耗限制存在根本性冲突。为了应对IOT技术复杂的应用场景，传统方法通常是在通用硬件上运行现有的算法。然而，由于硬件开发往往落后于算法的进步，这种方法常常因为缺乏足够的优化而遇到性能瓶颈。一种可行的解决方案是为新算法设计专用的硬件架构，但设计和验证这种专用硬件的过程既耗时又昂贵。算法定义硬件（Algorithm-Defined Hardware）是一种新的设计范式，旨在将算法需求直接转化为硬件架构，从而针对特定应用优化性能。其核心设计理念是根据算法的特性和需求创建定制化的硬件，将硬件转变为一个支持动态算法部署的灵活平台，满足复杂场景中对低功耗和高效率的迫切需求。
+                    </p>
+                </div>
+                <div class="mb-12" id="research-section">
+                    <h3 class="text-xl font-bold text-primary mb-4">研究框架示意图</h3>
+                    <img src="images/Framework.png" alt="ASNPC框架示意图" class="w-1/2 rounded-lg shadow-sm cursor-pointer mx-auto" onclick="openImageModal('images/Framework.png')">
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl mb-12">
+                    <h3 class="text-xl font-bold text-primary mb-4">主要研究成果</h3>
+                    <p class="text-gray-700 mb-6">
+                        为了解决以上问题，我们提出了一种名 ASNPC 的软硬件协同设计框架，核心创新包括：
+                    </p>
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <div class="text-primary mb-4"><i class="fas fa-microchip text-2xl"></i></div>
+                            <p class="text-gray-700">采用算法定义硬件的设计理念，构建协同设计框架，为一系列应用场景生成优化的 LSM 架构，使用针对算法需求定制的专用神经形态处理器。</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <div class="text-primary mb-4"><i class="fas fa-code text-2xl"></i></div>
+                            <p class="text-gray-700">开发一种基于可配置 RTL 代码模块的端到端设计方法，能够自动生成适用于各种场景的 LSM 硬件实现，具有硬件开销方面的优势。</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <div class="text-primary mb-4"><i class="fas fa-chart-line text-2xl"></i></div>
+                            <p class="text-gray-700">使用 MOTPE 算法搜索 LSM 的协同设计参数，并在三个数据集上展示了协同设计的效率。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-r from-primary/5 to-gray-50 p-8 rounded-xl">
+                    <h3 class="text-xl font-bold text-primary mb-4">访问感悟</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        通过这次 DATE 2025 之行，我在学术上有所收获，结识了许多相同研究方向的同学，和他们的交流让我获益良多，也让我体验了不同的文化与生活方式。希望未来有更多这样的机会，让我能够不断前行。
+                    </p>
+                </div>
+            </div>
+        </div>
+        `
+            },
+            paper2: {
+                title: "大规模语言模型的知识蒸馏技术研究",
+                content: `
 <div class="space-y-6">
 <div class="flex items-center space-x-4 text-sm text-gray-500 mb-6">
 <div><i class="fas fa-user-circle mr-2"></i>*** 副教授</div>
@@ -201,10 +238,10 @@ content: `
 </div>
 </div>
 `
-},
-paper3: {
-title: "基于图神经网络的社交网络分析方法",
-content: `
+            },
+            paper3: {
+                title: "基于图神经网络的社交网络分析方法",
+                content: `
 <div class="space-y-6">
 <div class="flex items-center space-x-4 text-sm text-gray-500 mb-6">
 <div><i class="fas fa-user-circle mr-2"></i>*** 研究员</div>
@@ -235,10 +272,10 @@ content: `
 </div>
 </div>
 `
-},
-paper4: {
-title: "脑机接口技术的突破性研究",
-content: `
+            },
+            paper4: {
+                title: "脑机接口技术的突破性研究",
+                content: `
 <div class="space-y-6">
 <div class="flex items-center space-x-4 text-sm text-gray-500 mb-6">
 <div><i class="fas fa-user-circle mr-2"></i>*** 教授</div>
@@ -269,10 +306,10 @@ content: `
 </div>
 </div>
 `,
-},
-paper5: {
-title: "智能机器人控制系统优化",
-content: `
+            },
+            paper5: {
+                title: "智能机器人控制系统优化",
+                content: `
 <div class="space-y-6">
 <div class="flex items-center space-x-4 text-sm text-gray-500 mb-6">
 <div><i class="fas fa-user-circle mr-2"></i>*** 副教授</div>
@@ -303,10 +340,10 @@ content: `
 </div>
 </div>
 `,
-},
-paper6: {
-title: "边缘计算网络架构研究",
-content: `
+            },
+            paper6: {
+                title: "边缘计算网络架构研究",
+                content: `
 <div class="space-y-6">
 <div class="flex items-center space-x-4 text-sm text-gray-500 mb-6">
 <div><i class="fas fa-user-circle mr-2"></i>**** 研究员</div>
@@ -337,25 +374,26 @@ content: `
 </div>
 </div>
 `
-}
-};
-function openModal(paperId) {
-const paper = papers[paperId];
-document.getElementById('modalTitle').textContent = paper.title;
-document.getElementById('modalContent').innerHTML = paper.content;
-document.getElementById('modal').classList.remove('hidden');
-document.body.style.overflow = 'hidden';
-}
-function closeModal() {
-document.getElementById('modal').classList.add('hidden');
-document.body.style.overflow = 'auto';
-document.getElementById('modalContent').scrollTop = 0;
-}
-document.getElementById('modal').addEventListener('click', function(e) {
-if (e.target === this) {
-closeModal();
-}
-});
-</script>
+            }
+        };
+        function openModal(paperId) {
+            const paper = papers[paperId];
+            document.getElementById('modalTitle').textContent = paper.title;
+            document.getElementById('modalContent').innerHTML = paper.content;
+            document.getElementById('modal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            document.getElementById('modal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+            document.getElementById('modalContent').scrollTop = 0;
+        }
+        document.getElementById('modal').addEventListener('click', function (e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+    </script>
 </body>
+
 </html>

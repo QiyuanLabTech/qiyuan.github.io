@@ -253,7 +253,7 @@
                         <div><i class="fas fa-calendar-alt mr-2"></i>2024-9-23</div>
                         </div>
                         <div class="prose max-w-none">
-                        <h3 class="text-lg font-semibold mb-4">摘要</h3>
+                        <h3 class="text-xl font-bold text-primary mb-4">摘要</h3>
                         <p class="mb-6">本文提出了一种结构化的提示方法，显著提高LLM自动生成Verilog代码的正确性。</p>
                         <p class="mb-6">本文生成分析并指出常规思维链(CoT)提示方法在Verilog生成任务中的不一致性；提出了VToT方法，将思维树(ToT, Tree of Thought)与Verilog生成任务相结合；通过在提示中嵌入分层约束、为LLM提供思考路径，生成更符合用户需求的Verilog代码，提高了代码生成任务的正确率。</p>
                         <h3 class="text-lg font-semibold mb-4">研究背景</h3>
@@ -288,7 +288,7 @@
                        <div><i class="fas fa-calendar-alt mr-2"></i>2025-2-15</div>
                        </div>
                        <div class="prose max-w-none">
-                       <h3 class="text-lg font-semibold mb-4">摘要</h3>
+                       <h3 class="text-xl font-bold text-primary mb-4">摘要</h3>
                        <p class="mb-6">代码Linting工具对于检测Verilog代码中的潜在缺陷至关重要。传统的Linting工具的局限性在于频繁的误报和冗余的缺陷报告。本文提出了LintLLM，它利用LLM通过Prompt of Logic-Tree和Defect Tracker来检测Verilog代码中的缺陷。此外，我们使用基于突变的缺陷注入技术构建了一个开源Benchmark，以评估LLM检测Verilog缺陷的能力。实验结果表明，与性能最佳的EDA工具相比，o1-mini将正确率提高了18.89\%，并将误报率降低了15.56\%。同时，LintLLM的运行成本不到商用EDA工具的十分之一。这项研究证明了LLM作为一种高效且经济的Linting工具的潜力。开源链接：<a href="https://github.com/fangzhigang32/Static-Verilog-Analysis" target="_blank" class="text-blue-500 hover:underline">https://github.com/fangzhigang32/Static-Verilog-Analysis</a></p>
                        <h3 class="text-lg font-semibold mb-4">研究背景</h3>
                        <p class="mb-6">在寄存器传输级（RTL）设计中，代码质量和编码风格的一致性对构建鲁棒且无缺陷的硬件至关重要。代码Linting工具可通过分析源代码中的潜在缺陷（如风格不一致或不可综合结构）显著降低验证成本。传统的Linting工具依赖预定义的规则匹配，导致大量误报；并且昂贵的授权费用阻碍了中小企业和研究机构的使用。近期，GPT-4等大语言模型（LLM）在Verilog代码相关任务中展现出潜力，引起了科研人员的思考：能否使用LLM检测Verilog设计中的潜在缺陷。</p>
@@ -318,7 +318,7 @@
                        <div><i class="fas fa-calendar-alt mr-2"></i>2024-03-27</div>
                        </div>
                        <div class="prose max-w-none">
-                       <h3 class="text-lg font-semibold mb-4">摘要</h3>
+                       <h3 class="text-xl font-bold text-primary mb-4">摘要</h3>
                        <p class="mb-6">本文探索了利用大型语言模型（LLM）加速处理器功能验证的潜力，提出了一种基于LLM的验证工作流，显著提升了验证效率。</p>
                        <p class="mb-6">通过针对RISC-V核心和神经形态处理器的实验，本文展示了LLM在生成测试用例方面的能力，代码覆盖率分别达到89%和91%，为传统处理器和新兴领域专用架构（DSA）的验证提供了新的研究方向。</p>
                        <h3 class="text-lg font-semibold mb-4"> 研究背景</h3>
@@ -359,7 +359,7 @@
                        <div><i class="fas fa-calendar-alt mr-2"></i>2024-10-24</div>
                        </div>
                        <div class="prose max-w-none">
-                       <h3 class="text-lg font-semibold mb-4">摘要</h3>
+                       <h3 class="text-xl font-bold text-primary mb-4">摘要</h3>
                        <p class="mb-6">本文提出了一种基于大型语言模型（LLM）的自动化测试用例生成框架LLM-TG，显著提高了处理器功能验证的效率和覆盖率。</p>
                        <p class="mb-6">本文通过分析传统验证方法的局限性，设计了一种结合规则约束、反馈机制和提示库的LLM驱动流程；实验结果表明，在RISC-V处理器验证中，LLM-TG的模块覆盖率和表达式覆盖率分别比现有最优方法（RISCV-DV和LLM4DV）提升至少8.34%和5.8%，为处理器验证提供了高效、自动化的新范式。 </p>
                        <h3 class="text-lg font-semibold mb-4">研究方法</h3>
@@ -398,7 +398,7 @@
                        <div><i class="fas fa-calendar-alt mr-2"></i>2024-11-20</div>
                        </div>
                        <div class="prose max-w-none">
-                       <h3 class="text-lg font-semibold mb-4">摘要</h3>
+                       <h3 class="text-xl font-bold text-primary mb-4">摘要</h3>
                        <p class="mb-6">本文提出了一个种群扰动的硬件测试生成框架PerturbGen，显著提升处理器验证中的覆盖率。</p>
                        <p class="mb-6">本文分析并之处了传统随机测试生成方法存在的关联性缺失、饱和效应和盲目性的三大局限性；进而提出了PerturbGen，将扰动进化的思想应用于测试生成；提出了种群级胡扰动与成员级自扰动相结合的两级扰动机制，构建覆盖率引导的反馈环路，提高了生成测试的覆盖率水平。</p>
                        <h3 class="text-lg font-semibold mb-4">研究背景</h3>
@@ -434,7 +434,7 @@
                         <div><i class="fas fa-calendar-alt mr-2"></i>2024-11-8</div>
                         </div>
                         <div class="prose max-w-none">
-                        <h3 class="text-lg font-semibold mb-4">摘要</h3>
+                        <h3 class="text-xl font-bold text-primary mb-4">摘要</h3>
                         <p class="mb-6">研究表明，脉冲神经网络硬件-算法协同设计能够在优化算法性能的同时降低硬件开销。然而，高维、混合变量类型的协同设计空间与耗时的硬件验证流程，是高效解决硬件-算法协同设计问题的主要挑战。为解决这些问题：</p>
                         <ul class="list-disc pl-6 mb-6">
                        <li>我们提出一种通用的三阶段硬件/算法协同设计框架；</li>
@@ -533,7 +533,7 @@
                        <div><i class="fas fa-calendar-alt mr-2"></i>2024-5-1</div>
                        </div>
                        <div class="prose max-w-none">
-                       <h3 class="text-lg font-semibold mb-4">摘要</h3>
+                       <h3 class="text-xl font-bold text-primary mb-4">摘要</h3>
                        <p class="mb-6">类脑处理器被设计为非冯·诺依曼系统，用于高效执行脉冲神经网络（SNN）。脉冲卷积神经网络（SCNN）结合了卷积神经网络和脉冲卷积神经网络的优势，已广泛应用于视觉任务。然而，随着SCNN规模的增大，在资源受限的类脑处理器上执行大规模SCNN面临许多挑战，包括由于资源竞争导致的突触剪枝过多、执行性能下降等问题。为了解决这些问题，我们提出了一种有效的方法，将大规模SCNN映射到资源受限的类脑处理器上。</p>
                        <p class="mb-6">该方法包括三个步骤：</p>
                        <ul class="list-disc pl-6 mb-6">
@@ -571,7 +571,7 @@
                        <div><i class="fas fa-calendar-alt mr-2"></i>2025-1-17</div>
                        </div>
                        <div class="prose max-w-none">
-                       <h3 class="text-lg font-semibold mb-4">摘要</h3>
+                       <h3 class="text-xl font-bold text-primary mb-4">摘要</h3>
                        <p class="mb-6">脉冲神经网络（SNNs）被认为是传统深度神经网络的有前景的节能替代方案。与此同时，类脑处理器的开发也在不断增加，以支持大规模SNNs的高效执行。然而，目前的工作往往将设计分开，主要优先考虑单一标准。硬件-算法协同设计允许在设计过程中同时考虑硬件和算法特性，有效减少资源使用，同时优化算法性能。鉴于此，我们开发了一个名为ASNPC的硬件-算法协同设计框架，针对SNNs和类脑处理器。考虑到广泛的混合变量协同设计空间和时间成本高昂的功能评估，我们采用了基于代理的多目标优化算法MOTPE，以识别平衡算法性能和硬件成本的帕累托解。为了快速获得硬件结果，我们设计了一种端到端的方法论，可以使用硬件库中的模板自动生成与每个候选项对应的神经形态处理器的寄存器传输级（RTL）代码。评估的硬件指标，如硬件资源和功耗，随后反馈给MOTPE以进行下一个候选项的选择。与现有工作相比，所提出的方法能够在有限的搜索预算内找到更好的帕累托解，使其有效适应各种应用场景。此外，在相同的硬件配置下，我们生成的类脑处理器实现了更低的硬件资源使用和更高的吞吐量。</p>
                        <h3 class="text-lg font-semibold mb-4">研究背景</h3>
                        <p class="mb-6">LSM，即脉冲版本的储层计算，是一种包含前馈和循环连接的脉冲神经网络（Spiking Neural Network, SNN）。LSM 通常由三个部分组成：负责脉冲编码的输入层、生成特征向量的液体层，以及与任务相关的读取层。LSM 巧妙地避免了一般循环 SNN 模型的训练难题，因为仅需训练读取层的权重。其丰富的动态特性和极低的训练开销，使 LSM 成为边缘系统的理想网络模型。液体层是 LSM 的核心部分，由兴奋性和抑制性神经元组成一个随机且循环互联的池。在本工作中，采用泄漏积分发放（LIF）神经元模型来模拟所有神经元的行为。我们采用了一种几何结构生成方法来构建液体层，此方法受到“距离越近，互连的可能性越大”这一概念的启发。</p>
