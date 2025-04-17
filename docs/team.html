@@ -1,6 +1,3 @@
----
-permalink: "/teamMember.html"
----
 <!DOCTYPE html>
 <html lang="zh">
 <head>
@@ -18,7 +15,25 @@ permalink: "/teamMember.html"
 <script src="js/tailwind-config.js"></script>
 </head>
 <body class="bg-gray-50">
-    {% include "headernjk.njk" %}
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+<div class="max-w-7xl mx-auto px-4">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center">
+    <a href="#">
+        <img src="images/logo.png" alt="Logo" class="w-12 h-12">
+    </a>
+</div>
+<nav class="flex space-x-8">
+<a href="index" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">首页</a>
+<a href="news" class="text-[#0066CC] px-3 py-2 text-sm font-medium">新闻</a>
+<a href="proceedings" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">论文集</a>
+<a href="admission" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">招生与实习就业</a>
+
+
+</nav>
+</div>
+</div>
+</header>
 <!-- <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
 <div class="max-w-7xl mx-auto px-4">
 <div class="flex justify-between items-center h-16">
@@ -214,7 +229,41 @@ class="w-full h-40 object-cover rounded-lg mb-4">
 </div>
 </div>
 </div>
-{% include "footer.njk" %}
+<footer class="bg-gray-900 text-white py-12">
+  <div class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-4 gap-8">
+          <div>
+              <a href="/" class="font-['Pacifico'] text-2xl text-white mb-6 block">logo</a>
+              <p class="text-gray-400">启元脑芯片实验室致力于脑机接口技术研发与创新，打造智能科技未来。</p>
+          </div>
+          <div>
+              <h4 class="text-lg font-semibold mb-4">快速链接</h4>
+              <ul class="space-y-2 text-gray-400">
+                  <li><a href="index" class="hover:text-white">首页</a></li>
+                  <li><a href="news" class="hover:text-white">新闻</a></li>
+                  <li><a href="proceedings" class="hover:text-white">论文集</a></li>
+                  <li><a href="admission" class="hover:text-white">招生与实习就业</a></li>
+                  
+                  
+              </ul>
+          </div>
+          <div>
+              <h4 class="text-lg font-semibold mb-4">合作方式</h4>
+              <ul class="space-y-2 text-gray-400">
+                  <li>产学研合作</li>
+                  <li>技术授权</li>
+                  <li>人才培养</li>
+                  <li>项目合作</li>
+              </ul>
+          </div>
+          <div>
+          </div>
+      </div>
+      <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+          <p>© 2025 启元脑芯片实验室. 保留所有权利.</p>
+      </div>
+  </div>
+</footer>
 <!-- <footer class="bg-gray-900 text-white py-12">
   <div class="max-w-7xl mx-auto px-4">
       <div class="grid grid-cols-4 gap-8">

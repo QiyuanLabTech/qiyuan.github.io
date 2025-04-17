@@ -1,28 +1,29 @@
-function openModal(id) {
-    const modal = document.getElementById('newsModal');
-    const data = newsData[id];
+// function openModal(id) {
+//     const modal = document.getElementById('newsModal');
+//     const data = newsData[id];
     
-    document.getElementById('modalTitle').textContent = data.title;
-    document.getElementById('modalDate').textContent = data.date;
-    document.getElementById('modalImage').src = data.image;
-    document.getElementById('modalContent').innerHTML = data.content.split('\n').map(p => `<p class="mb-4">${p.trim()}</p>`).join('');
+//     document.getElementById('modalTitle').textContent = data.title;
+//     document.getElementById('modalDate').textContent = data.date;
+//     document.getElementById('modalImage').src = data.image;
+//     document.getElementById('modalContent').innerHTML = data.content.split('\n').map(p => `<p class="mb-4">${p.trim()}</p>`).join('');
     
-    modal.style.display = 'block';
-    document.body.style.overflow = 'hidden';
-}
+//     modal.style.display = 'block';
+//     document.body.style.overflow = 'hidden';
+// }
 
-function closeModal() {
-    const modal = document.getElementById('newsModal');
-    modal.style.display = 'none';
-    document.body.style.overflow = 'auto';
-}
+// function closeModal() {
+//     const modal = document.getElementById('newsModal');
+//     modal.style.display = 'none';
+//     document.body.style.overflow = 'auto';
+// }
 
-window.onclick = function(event) {
-    const modal = document.getElementById('newsModal');
-    if (event.target == modal) {
-        closeModal();
-    }
-}
+// window.onclick = function(event) {
+//     const modal = document.getElementById('newsModal');
+//     if (event.target == modal) {
+//         closeModal();
+//     }
+// }
+
 // 点击框架示意图
 function openImageModal(imageSrc) {
     const modalImage = document.getElementById('modalImage');
@@ -41,9 +42,9 @@ function closeImageModal() {
 }
 
 // 添加点击事件以放大图片
-document.getElementById('modalImage').addEventListener('click', function() {
-    this.classList.toggle('scale-150'); // 点击时切换缩放
-});
+// document.getElementById('modalImage').addEventListener('click', function() {
+//     this.classList.toggle('scale-150'); // 点击时切换缩放
+// });
 // 使用浏览器的 localStorage 来记录访问次数（仅限本地统计）
 // const elements = document.querySelectorAll('.text-gray-500.text-sm');
 // // 第一个元素是日期

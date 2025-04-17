@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>启元实验室 - 新闻</title>
+    <title>启元实验室 - 招生与实习就业</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -18,23 +17,38 @@
 </head>
 
 <body class="bg-gray-50">
-    <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
-<div class="max-w-7xl mx-auto px-4">
-<div class="flex items-center justify-between h-16">
-<div class="flex items-center">
-<a href="#" class="text-2xl font-['Pacifico'] text-primary">logo</a>
-</div>
-<nav class="flex space-x-8">
-<a href="index" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">首页</a>
-<a href="news" class="text-[#0066CC] px-3 py-2 text-sm font-medium">新闻</a>
-<a href="proceedings" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">论文集</a>
-<a href="admission" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">招生与实习就业</a>
-
-
-</nav>
-</div>
-</div>
+    <style>
+    .text-blue-500 {
+      color: #0066CC; /* 你想要的高亮颜色 */
+    }
+  </style>
+<header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <a href="#">
+                    <img src="images/logo.png" alt="Logo" class="w-12 h-12">
+                </a>
+            </div>
+            <nav class="flex space-x-8">
+                <a href="index.html" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">首页</a>
+                <a href="news.html" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">新闻</a>
+                <a href="proceedings.html" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">论文集</a>
+                <a href="admission.html" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">招生与实习就业</a>
+            </nav>
+        </div>
+    </div>
 </header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('nav a').forEach(anchor => {
+      if (window.location.pathname.includes(anchor.getAttribute('href'))) {
+        anchor.classList.add('text-blue-500'); // 或者你想要的高亮类
+      }
+    });
+  });
+</script>
     <!-- <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
 <div class="max-w-7xl mx-auto px-4">
 <div class="flex items-center justify-between h-16">
@@ -53,7 +67,7 @@
 </header> -->
     <main class="max-w-7xl mx-auto px-4 pt-24 pb-12">
         <div class="mb-8">
-            <h1 class="text-3xl font-bold text-gray-900">新闻中心</h1>
+            <h1 class="text-3xl font-bold text-gray-900">招生与实习就业</h1>
             <p class="mt-2 text-gray-600">探索前沿科技研究成果</p>
         </div>
         <div class="grid grid-cols-3 gap-6">
