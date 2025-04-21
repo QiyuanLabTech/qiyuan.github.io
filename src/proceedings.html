@@ -21,30 +21,32 @@ permalink: "/proceedings.html"
 
 <body class="bg-gray-50">
     {% include "headernjk.njk" %}
-    <!-- <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex items-center">
-                    <a href="#" class="text-2xl font-['Pacifico'] text-primary">logo</a>
-                </div>
-                <nav class="flex space-x-8">
-                    <a href="index" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">首页</a>
-                    <a href="news" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">新闻</a>
-                    <a href="#" class="text-[#0066CC] px-3 py-2 text-sm font-medium">论文集</a>
-                    <a href="teamMember" class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">成员</a>
-                    <a href="collaboration"
-                        class="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium">合作</a>
-                </nav>
-            </div>
-        </div>
-    </header> -->
     <main class="max-w-7xl mx-auto px-4 pt-24 pb-12">
         <div class="mb-8">
             <h1 class="text-3xl font-bold text-gray-900">论文集</h1>
             <p class="mt-2 text-gray-600">探索前沿科技研究成果</p>
         </div>
+        <!-- 分类导航 -->
+        <div class="shadow-sm mb-8">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex flex-wrap gap-4">
+                    <button
+                        class="filter-btn px-6 py-2 rounded-button border border-gray-300 text-blue-500 hover:bg-gray-100 transition-colors"
+                        data-category="all">全部</button>
+                    <button
+                        class="filter-btn px-6 py-2 rounded-button border border-gray-300 text-gray-700 hover:bg-gray-100 transition-colors"
+                        data-category="model">大模型辅助芯片设计</button>
+                    <button
+                        class="filter-btn px-6 py-2 rounded-button border border-gray-300 text-gray-700 hover:bg-gray-100 transition-colors"
+                        data-category="chip">类脑芯片设计与实现</button>
+                    <button
+                        class="filter-btn px-6 py-2 rounded-button border border-gray-300 text-gray-700 hover:bg-gray-100 transition-colors"
+                        data-category="algorithm">类脑算法与应用</button>
+                </div>
+            </div>
+        </div>
         <div class="grid grid-cols-3 gap-6">
-            <div class="card bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer"
+            <div class="card bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer" data-category="model"
                 onclick="openModal('paper1')">
                 <div class="aspect-w-16 aspect-h-9">
                     <img src="images/perderT.jpg" alt="论文封面" class="w-full h-full object-cover">
@@ -62,7 +64,7 @@ permalink: "/proceedings.html"
                     </div>
                 </div>
             </div>
-            <div class="card bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer"
+            <div class="card bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer" data-category="chip"
                 onclick="openModal('paper2')">
                 <div class="aspect-w-16 aspect-h-9">
                     <img src="images/perderF.png" alt="论文封面" class="w-full h-full object-cover">
@@ -80,7 +82,7 @@ permalink: "/proceedings.html"
                     </div>
                 </div>
             </div>
-            <div class="card bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer"
+            <div class="card bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer" data-category="algorithm"
                 onclick="openModal('paper3')">
                 <div class="aspect-w-16 aspect-h-9">
                     <img src="images/perderX.png" alt="论文封面" class="w-full h-full object-cover">
@@ -97,7 +99,7 @@ permalink: "/proceedings.html"
                     </div>
                 </div>
             </div>
-            <div class="card bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer"
+            <div class="card bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer"data-category="model"
                 onclick="openModal('paper4')">
                 <div class="aspect-w-16 aspect-h-9">
                     <img src="images/perderD.png" alt="论文封面" class="w-full h-full object-cover">
@@ -115,7 +117,7 @@ permalink: "/proceedings.html"
                     </div>
                 </div>
             </div>
-            <div class="card bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer"
+            <div class="card bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer"data-category="model"
                 onclick="openModal('paper5')">
                 <div class="aspect-w-16 aspect-h-9">
                     <img src="images/perderWW.png" alt="论文封面" class="w-full h-full object-cover">
@@ -217,40 +219,6 @@ permalink: "/proceedings.html"
         </div>
     </div>
     {% include "footer.njk" %}
-    <!-- <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid grid-cols-4 gap-8">
-                <div>
-                    <a href="/" class="font-['Pacifico'] text-2xl text-white mb-6 block">logo</a>
-                    <p class="text-gray-400">启元脑芯片实验室致力于脑机接口技术研发与创新，打造智能科技未来。</p>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">快速链接</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="index" class="hover:text-white">首页</a></li>
-                        <li><a href="news" class="hover:text-white">新闻</a></li>
-                        <li><a href="/" class="hover:text-white">论文集</a></li>
-                        <li><a href="teamMember" class="hover:text-white">成员</a></li>
-                        <li><a href="collaboration" class="hover:text-white">合作</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">合作方式</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li>产学研合作</li>
-                        <li>技术授权</li>
-                        <li>人才培养</li>
-                        <li>项目合作</li>
-                    </ul>
-                </div>
-                <div>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-                <p>© 2024 启元脑芯片实验室. 保留所有权利.</p>
-            </div>
-        </div>
-    </footer> -->
     <script>
         const papers = {
             paper1: {
@@ -610,7 +578,6 @@ permalink: "/proceedings.html"
             },
         };
         // 修改后的openModal函数
-        // 修改后的openModal函数
         function openModal(paperId) {
             const paper = papers[paperId]; // 获取当前论文对象
             document.getElementById('modalTitle').textContent = paper.title;
@@ -743,8 +710,56 @@ permalink: "/proceedings.html"
         // 调用排序函数
         sortPapersByDate();
 
+        // document.addEventListener('DOMContentLoaded', function() {
+        //         const filterButtons = document.querySelectorAll('.filter-btn');
+        //         const cards = document.querySelectorAll('.card');
 
+        //         filterButtons.forEach(button => {
+        //             button.addEventListener('click', function() {
+        //                 const category = this.getAttribute('data-category');
 
+        //                 // 更新按钮的高亮状态
+        //                 filterButtons.forEach(btn => btn.classList.remove('text-blue-500'));
+        //                 this.classList.add('text-blue-500');
+
+        //                 // 显示或隐藏卡片
+        //                 cards.forEach(card => {
+        //                     if (category === 'all' || card.getAttribute('data-category') === category) {
+        //                         card.style.display = 'block';
+        //                     } else {
+        //                         card.style.display = 'none';
+        //                     }
+        //                 });
+        //             });
+        //         });
+        //     });
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const cards = document.querySelectorAll('.card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const category = this.getAttribute('data-category');
+
+                    // 更新按钮的高亮状态
+                    filterButtons.forEach(btn => btn.classList.remove('text-blue-500'));
+                    this.classList.add('text-blue-500');
+
+                    // 使用 filter 方法筛选卡片
+                    const filteredCards = Array.from(cards).filter(card => {
+                        return category === 'all' || card.getAttribute('data-category') === category;
+                    });
+
+                    // 显示筛选后的卡片，隐藏其他卡片
+                    cards.forEach(card => {
+                        card.style.display = 'none'; // 先隐藏所有卡片
+                    });
+                    filteredCards.forEach(card => {
+                        card.style.display = 'block'; // 显示筛选后的卡片
+                    });
+                });
+            });
+        });
     </script>
 </body>
 

@@ -1,0 +1,47 @@
+.tab-content {
+    display: none;
+    }
+    .tab-content.active {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+    }
+    @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+    }
+    .tab-button.active {
+    color: #2563eb;
+    border-bottom: 2px solid #2563eb;
+    }
+    i.fa-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    }
+    .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #e5e7eb;
+    }
+    .timeline-dot {
+    position: absolute;
+    left: -5px;
+    top: 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #2563eb;
+    }
+    .tab-content {
+        display: none;
+    }
+    
+    .tab-content.active {
+        display: block;
+    }

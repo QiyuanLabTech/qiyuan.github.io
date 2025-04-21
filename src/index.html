@@ -18,27 +18,30 @@
   {% include "header.njk" %}
 <!-- Header -->
 <!-- <header id="header" class="fixed top-0 left-0 w-full bg-transparent transition-all duration-300 z-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-  <div class="flex justify-between items-center h-[80px]">
-  <div class="flex-shrink-0">
-  <a href="/" class="font-['Pacifico'] text-2xl text-primary transition-colors duration-300 logo">logo</a>
-  </div>
-  <nav class="hidden md:flex space-x-8">
-    <a href="news" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">新闻</a>
-    <a href="proceedings" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">论文集</a>
-    <a href="teamMember" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">成员</a>
-    <a href="collaboration" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">合作</a>
-    </nav>
-    <div class="flex items-center space-x-4">
-    <button class="!rounded-button p-2 hover:bg-white/10">
-    <i class="fas fa-search text-white transition-colors duration-300"></i>
-    </button>
-    <button class="md:hidden !rounded-button p-2 hover:bg-white/10">
-    <i class="fas fa-bars text-white transition-colors duration-300"></i>
-    </button>
-  </div>
-  </div>
-  </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-[80px]">
+        <div class="flex-shrink-0">
+          <a href="/" class="font-['Pacifico'] transition-colors duration-300 logo">
+            <img src="images/logo.png" alt="Logo" class="w-12 h-12">
+          </a>
+        </div>
+        <nav class="hidden md:flex space-x-8 layOutheader">
+          <a href="news" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">新闻</a>
+          <a href="proceedings" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">论文集</a>
+          <a href="admission" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">招生与实习就业</a>
+          {# <a href="teamMember" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">成员</a> #}
+          {# <a href="collaboration" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">合作</a> #}
+        </nav>
+        <div class="flex items-center space-x-4">
+          <button class="!rounded-button p-2 hover:bg-white/10">
+            <i class="fas fa-search text-white transition-colors duration-300"></i>
+          </button>
+          <button class="md:hidden !rounded-button p-2 hover:bg-white/10">
+            <i class="fas fa-bars text-white transition-colors duration-300"></i>
+          </button>
+        </div>
+      </div>
+    </div>
   </header> -->
 <!-- Hero Section -->
 <section class="relative h-screen overflow-hidden" style="background-image: url('images/banner.jpg'); background-size: cover; background-position: center;">
@@ -106,29 +109,19 @@
   </div>
   <div class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300" onclick="location.href='news'">
   <div class="relative h-48 overflow-hidden">
-  <img src="images/news2.jpg"
+  <img src="images/news4.jpg"
   alt="Project 2"
   class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 group-hover:brightness-75">
   </div>
   <div class="relative">
   <div class="absolute top-0 left-0 right-0 h-[5px] bg-transparent group-hover:bg-primary transition-colors duration-300"></div>
   <div class="p-6  transition-colors duration-300">
-  <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">Brain-Computer Interface</h3>
-  <p class="text-gray-600 group-hover:text-gray-700">Cutting-edge neural interface systems for direct brain-computer communication. </p>
-  </div>
-  </div>
-  </div>
-  <div class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300" onclick="location.href='news'">
-  <div class="relative h-48 overflow-hidden">
-  <img src="images/news3.jpg"
-  alt="Project 3"
-  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 group-hover:brightness-75">
-  </div>
-  <div class="relative">
-  <div class="absolute top-0 left-0 right-0 h-[5px] bg-transparent group-hover:bg-primary transition-colors duration-300"></div>
-  <div class="p-6  transition-colors duration-300">
-  <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">AI Algorithm Innovation</h3>
-  <p class="text-gray-600 group-hover:text-gray-700">Revolutionary algorithms optimized for next-generation neuromorphic computing systems.</p>
+  <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">2025年脑科学论坛：创新与合作的里程碑</h3>
+  <!-- <p class="text-gray-600 group-hover:text-gray-700">Cutting-edge neural interface systems for direct brain-computer communication. </p> -->
+  <div class="flex items-center text-sm text-gray-500">
+    <i class="fas fa-calendar-alt mr-2"></i>
+    <span>2025-01-09</span>
+</div>
   </div>
   </div>
   </div>

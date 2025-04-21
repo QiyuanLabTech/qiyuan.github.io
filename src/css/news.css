@@ -101,3 +101,7 @@ body {
         transform: scale(1.5); /* 放大 1.5 倍 */
         transition: transform 0.3s ease; /* 添加过渡效果 */
     }
+    ul.text-gray-600 {
+        list-style-type: disc; /* 确保显示小圆圈 */
+        margin-left: 20px; /* 适当调整左边距 */
+      }

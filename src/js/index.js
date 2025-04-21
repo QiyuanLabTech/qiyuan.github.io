@@ -61,10 +61,6 @@ function closeNewsDetail() {
   document.getElementById('newsDetail').classList.add('hidden');
   document.body.style.overflow = 'auto';
 }
-// Add click event to news cards
-document.querySelectorAll('.project-card').forEach(card => {
-  card.addEventListener('click', showNewsDetail);
-});
 
 
 
