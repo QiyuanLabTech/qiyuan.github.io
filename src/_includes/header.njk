@@ -12,9 +12,9 @@
         </a>
       </div>
       <nav class="hidden md:flex space-x-8 layOutheader">
-        <a href="news" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">新闻</a>
-        <a href="proceedings" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">论文集</a>
-        <a href="admission" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">招生与实习就业</a>
+        <a href="news" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300" id="news-link">新闻</a>
+    <a href="proceedings" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300" id="proceedings-link">论文集</a>
+    <a href="admission" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300" id="admission-link">招生与实习就业</a>
         {# <a href="teamMember" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">成员</a> #}
         {# <a href="collaboration" class="nav-link text-white hover:text-white/80 px-3 py-2 transition-colors duration-300">合作</a> #}
       </nav>
@@ -29,3 +29,19 @@
     </div>
   </div>
 </header>
+<script>
+  // 获取所有导航链接
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  // 获取当前页面的路径
+  const currentPath = window.location.pathname.split('/').pop(); // 获取当前页面的文件名，例如 'news', 'proceedings', 等
+
+  // 遍历所有导航链接，检查它们的 href 是否匹配当前路径
+  navLinks.forEach(link => {
+    const linkHref = link.getAttribute('href').split('/').pop(); // 获取链接的文件名部分
+    // 如果链接的文件名与当前页面匹配，则添加高亮类
+    if (currentPath === linkHref) {
+      link.classList.add('text-blue-500'); // 为当前页面的链接添加高亮样式
+    }
+  });
+</script>

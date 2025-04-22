@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>启元脑芯片实验室</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-<link rel="stylesheet" href="css/index.css">
-<link rel="stylesheet" href="css/global.css">
-<link href="output.css" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="js/tailwind-config.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>启元脑芯片实验室</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link href="output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
 </head>
+
 <body class="bg-white">
-  {% include "header.njk" %}
-<!-- Header -->
-<!-- <header id="header" class="fixed top-0 left-0 w-full bg-transparent transition-all duration-300 z-50">
+    {% include "header.njk" %}
+    <!-- Header -->
+    <!-- <header id="header" class="fixed top-0 left-0 w-full bg-transparent transition-all duration-300 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-[80px]">
         <div class="flex-shrink-0">
@@ -43,96 +45,106 @@
       </div>
     </div>
   </header> -->
-<!-- Hero Section -->
-<section class="relative h-screen overflow-hidden" style="background-image: url('images/banner.jpg'); background-size: cover; background-position: center;">
-<div class="absolute inset-0 bg-black bg-opacity-50"></div>
-<div class="relative max-w-7xl mx-auto px-4 h-full flex items-center">
-<div class="hero-text text-white max-w-3xl">
-<h1 class="text-5xl font-bold mb-6">我们正全力推进大模型助力芯片设计、类脑芯片与算法的创新融合之旅。</h1>
-<p class="text-xl mb-8">依托大模型辅助设计，深耕类脑芯片设计与类脑算法应用的创新前沿。</p>
-</div>
-</div>
-<!-- Navigation Bar -->
-<div class="absolute bottom-8 left-0 right-0 flex justify-center">
-    <div class="w-full max-w-4xl bg-white/20 backdrop-blur-sm rounded-t-lg rounded-b-lg px-8 py-4 mb-[5px]">
-        <div class="flex justify-between">
-            <!-- Nav Item 1 -->
-            <div class="nav-item flex flex-col items-center cursor-pointer p-2 rounded-lg transition-colors duration-200 relative" onclick="location.href='proceedings.html'">
-                <div class="nav-icon text-white mb-2">
-                    <i class="fas fa-project-diagram text-3xl"></i>
-                </div>
-                <span class="nav-text text-white text-sm font-medium">大模型辅助芯片设计</span>
-            </div>
-            <!-- Nav Item 2 -->
-            <div class="nav-item flex flex-col items-center cursor-pointer p-2 rounded-lg transition-colors duration-200 relative" onclick="location.href='proceedings.html'">
-                <div class="nav-icon text-white mb-2">
-                    <i class="fas fa-microchip text-3xl"></i>
-                </div>
-                <span class="nav-text text-white text-sm font-medium">类脑芯片设计与实现</span>
-            </div>
-            <!-- Nav Item 3 -->
-            <div class="nav-item flex flex-col items-center cursor-pointer p-2 rounded-lg transition-colors duration-200 relative" onclick="location.href='proceedings.html'">
-                <div class="nav-icon text-white mb-2">
-                    <i class="fas fa-brain text-3xl"></i>
-                    
-                </div>
-                <span class="nav-text text-white text-sm font-medium">类脑算法与应用</span>
+    <!-- Hero Section -->
+    <section class="relative h-screen overflow-hidden"
+        style="background-image: url('images/banner.jpg'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative max-w-7xl mx-auto px-4 h-full flex items-center">
+            <div class="hero-text text-white max-w-3xl">
+                <h1 class="text-5xl font-bold mb-6">我们正全力推进大模型助力芯片设计、类脑芯片与算法的创新融合之旅。</h1>
+                <p class="text-xl mb-8">依托大模型辅助设计，深耕类脑芯片设计与类脑算法应用的创新前沿。</p>
             </div>
         </div>
-    </div>
-</div>
-</section>
-<!-- Main Content -->
-<main class="max-w-7xl mx-auto px-4 py-16">
+        <!-- Navigation Bar -->
+        <div class="absolute bottom-8 left-0 right-0 flex justify-center">
+            <div class="w-full max-w-4xl bg-white/20 backdrop-blur-sm rounded-t-lg rounded-b-lg px-8 py-4 mb-[5px]">
+                <div class="flex justify-between">
+                    <!-- Nav Item 1 -->
+                    <div class="nav-item flex flex-col items-center cursor-pointer p-2 rounded-lg transition-colors duration-200 relative"
+                        onclick="location.href='proceedings.html'">
+                        <div class="nav-icon text-white mb-2">
+                            <i class="fas fa-project-diagram text-3xl"></i>
+                        </div>
+                        <span class="nav-text text-white text-sm font-medium">大模型辅助芯片设计</span>
+                    </div>
+                    <!-- Nav Item 2 -->
+                    <div class="nav-item flex flex-col items-center cursor-pointer p-2 rounded-lg transition-colors duration-200 relative"
+                        onclick="location.href='proceedings.html'">
+                        <div class="nav-icon text-white mb-2">
+                            <i class="fas fa-microchip text-3xl"></i>
+                        </div>
+                        <span class="nav-text text-white text-sm font-medium">类脑芯片设计与实现</span>
+                    </div>
+                    <!-- Nav Item 3 -->
+                    <div class="nav-item flex flex-col items-center cursor-pointer p-2 rounded-lg transition-colors duration-200 relative"
+                        onclick="location.href='proceedings.html'">
+                        <div class="nav-icon text-white mb-2">
+                            <i class="fas fa-brain text-3xl"></i>
 
-<!-- 新闻 -->
-<section class="mb-20">
-  <h2 class="text-3xl font-bold mb-12 text-center">新闻</h2>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-  <div class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300" onclick="location.href='news'">
-  <div class="relative h-48 overflow-hidden">
-  <img src="images/date.jpg"
-  alt="Project 1"
-  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 group-hover:brightness-75">
-  </div>
-  <div class="relative">
-  <div class="absolute top-0 left-0 right-0 h-[5px] bg-transparent group-hover:bg-primary transition-colors duration-300"></div>
-  <div class="p-6  transition-colors duration-300">
-  <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">ASNPC：面向SNN和类脑处理器协同设计的自动化生成框架</h3>
-    <div class="flex items-center text-sm text-gray-500">
-        <i class="fas fa-calendar-alt mr-2"></i>
-        <span>2025-03-19</span>
-    </div>
-  <!-- <p class="text-gray-600 group-hover:text-gray-700">Advanced hardware platform for efficient neural network processing and brain-inspired computing.</p> -->
-  </div>
-  </div>
-  </div>
-  <div class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300" onclick="location.href='news'">
-  <div class="relative h-48 overflow-hidden">
-  <img src="images/news4.jpg"
-  alt="Project 2"
-  class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 group-hover:brightness-75">
-  </div>
-  <div class="relative">
-  <div class="absolute top-0 left-0 right-0 h-[5px] bg-transparent group-hover:bg-primary transition-colors duration-300"></div>
-  <div class="p-6  transition-colors duration-300">
-  <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">2025年脑科学论坛：创新与合作的里程碑</h3>
-  <!-- <p class="text-gray-600 group-hover:text-gray-700">Cutting-edge neural interface systems for direct brain-computer communication. </p> -->
-  <div class="flex items-center text-sm text-gray-500">
-    <i class="fas fa-calendar-alt mr-2"></i>
-    <span>2025-01-09</span>
-</div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </section>
-<!-- Projects -->
-<section class="mb-20">
-    <h2 class="text-3xl font-bold mb-12 text-center">论文集</h2>
-    <div class="flex flex-col gap-6">
-        <!-- 模块 1 -->
-        <!-- <div class="card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer flex" onclick="location.href='proceedings'" style="font-size: 1.25rem;">
+                        </div>
+                        <span class="nav-text text-white text-sm font-medium">类脑算法与应用</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 py-16">
+
+        <!-- 新闻 -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold mb-12 text-center">新闻</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+                    onclick="location.href='news.html'">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/date.jpg" alt="Project 1"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 group-hover:brightness-75">
+                    </div>
+                    <div class="relative">
+                        <div
+                            class="absolute top-0 left-0 right-0 h-[5px] bg-transparent group-hover:bg-primary transition-colors duration-300">
+                        </div>
+                        <div class="p-6  transition-colors duration-300">
+                            <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">
+                                ASNPC：面向SNN和类脑处理器协同设计的自动化生成框架</h3>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-calendar-alt mr-2"></i>
+                                <span>2025-03-19</span>
+                            </div>
+                            <!-- <p class="text-gray-600 group-hover:text-gray-700">Advanced hardware platform for efficient neural network processing and brain-inspired computing.</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="group bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
+                    onclick="location.href='news.html'">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="images/news4.jpg" alt="Project 2"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110 group-hover:brightness-75">
+                    </div>
+                    <div class="relative">
+                        <div
+                            class="absolute top-0 left-0 right-0 h-[5px] bg-transparent group-hover:bg-primary transition-colors duration-300">
+                        </div>
+                        <div class="p-6  transition-colors duration-300">
+                            <h3 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors duration-300">
+                                2025年脑科学论坛：创新与合作的里程碑</h3>
+                            <!-- <p class="text-gray-600 group-hover:text-gray-700">Cutting-edge neural interface systems for direct brain-computer communication. </p> -->
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-calendar-alt mr-2"></i>
+                                <span>2025-01-09</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects -->
+        <section class="mb-20">
+            <h2 class="text-3xl font-bold mb-12 text-center">论文集</h2>
+            <div class="flex flex-col gap-6">
+                <!-- 模块 1 -->
+                <!-- <div class="card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer flex" onclick="location.href='proceedings'" style="font-size: 1.25rem;">
             <div class="w-80 h-52 flex-shrink-0 overflow-hidden rounded-lg">
                 <img src="images/perderT.jpg" alt="论文封面" class="w-full h-full object-contain rounded-inherit">
             </div>
@@ -148,115 +160,134 @@
                 </div>
             </div>
         </div> -->
-        <!-- 模块 2 -->
-        <div class="card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer flex" onclick="location.href='proceedings'" style="font-size: 1.25rem;">
-            <div class="w-80 h-52 flex-shrink-0 overflow-hidden rounded-lg">
-                <img src="images/perderF.png" alt="论文封面" class="w-full h-full object-contain rounded-inherit">
+                <!-- 模块 2 -->
+                <div class="card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer flex"
+                    onclick="location.href='proceedings.html'" style="font-size: 1.25rem;">
+                    <div class="w-80 h-52 flex-shrink-0 overflow-hidden rounded-lg">
+                        <img src="images/perderF.png" alt="论文封面" class="w-full h-full object-contain rounded-inherit">
+                    </div>
+                    <div class="p-8 flex-1">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">LintLLM：基于大语言模型的开源Verilog Linting框架</h3>
+                        <p class="text-gray-600 text-lg mb-6">首次使用LLM完成Verilog代码Linting任务，提升缺陷检测率的同时显著降低使用成本。
+                        <div class="flex items-center text-lg text-gray-500">
+                            <i class="fas fa-user-circle mr-2"></i>
+                            <span>方志刚...</span>
+                            <span class="mx-2">|</span>
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>2025-2-15</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 模块 3 -->
+                <div class="card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer flex"
+                    onclick="location.href='proceedings.html'" style="font-size: 1.25rem;">
+                    <div class="w-80 h-52 flex-shrink-0 overflow-hidden rounded-lg">
+                        <img src="images/perderWW.png" alt="论文封面" class="w-full h-full object-contain rounded-inherit">
+                    </div>
+                    <div class="p-8 flex-1">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">PerturbGen：一个基于种群扰动的硬件测试生成框架</h3>
+                        <p class="text-gray-600 text-lg mb-6">本文提出了一个种群扰动的硬件测试生成框架PerturbGen，显著提升处理器验证中的覆盖率。</p>
+                        <div class="flex items-center text-lg text-gray-500">
+                            <i class="fas fa-user-circle mr-2"></i>
+                            <span>王静凯...</span>
+                            <span class="mx-2">|</span>
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>2024-11-20</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer flex"
+                    onclick="location.href='proceedings.html'" style="font-size: 1.25rem;">
+                    <div class="w-80 h-52 flex-shrink-0 overflow-hidden rounded-lg">
+                        <img src="images/perderD.png" alt="论文封面" class="w-full h-full object-contain rounded-inherit">
+                    </div>
+                    <div class="p-8 flex-1">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">VToT：通过LLMs使用思维树提示自动生成Verilog</h3>
+                        <p class="text-gray-600 text-lg mb-6">本文被IEEE第42届国际计算机设计会议（ICCD
+                            2024）收录，会议于2024年在意大利米兰举行。ICCD是计算机体系结构与设计领域的权威会议，CCF推荐为B类会议。相关代码与提示库已开源。</p>
+                        <div class="flex items-center text-lg text-gray-500">
+                            <i class="fas fa-user-circle mr-2"></i>
+                            <span>邓一飞...</span>
+                            <span class="mx-2">|</span>
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>2024-10-24</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="p-8 flex-1">
-                <h3 class="text-2xl font-semibold text-gray-900 mb-4">LintLLM：基于大语言模型的开源Verilog Linting框架</h3>
-                <p class="text-gray-600 text-lg mb-6">首次使用LLM完成Verilog代码Linting任务，提升缺陷检测率的同时显著降低使用成本。
-                <div class="flex items-center text-lg text-gray-500">
-                    <i class="fas fa-user-circle mr-2"></i>
-                    <span>方志刚...</span>
-                    <span class="mx-2">|</span>
-                    <i class="fas fa-calendar-alt mr-2"></i>
-                    <span>2025-2-15</span>
+        </section>
+        <!-- Latest News -->
+        <!-- Recruitment Section -->
+        <!-- Recruitment Section -->
+        <div class="mt-16">
+            <h2 class="text-3xl font-bold text-center mb-12">招生与实习就业</h2>
+            <div class="relative w-full max-w-6xl mx-auto h-[400px] bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="absolute inset-0 flex">
+                    <!-- PhD Card -->
+                    <div class="relative w-1/4 h-full group overflow-hidden transition-all duration-500 hover:w-1/2">
+                        <div
+                            class="absolute inset-0 bg-[url('https://ai-public.mastergo.com/ai/img_res/74b11032711580ce9a2305aa5c3ec6af.jpg')] bg-cover bg-center">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">博士研究生</h3>
+                            <p class="text-sm opacity-90 mb-4">加入我们的博士项目，推动类脑计算的前沿研究</p>
+                            <button class="bg-primary text-white px-4 py-2 !rounded-button"
+                                onclick="window.location.href = 'admission.html#phd';">
+                                了解更多 <i class="fas fa-chevron-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Master Card -->
+                    <div class="relative w-1/4 h-full group overflow-hidden transition-all duration-500 hover:w-1/2">
+                        <div
+                            class="absolute inset-0 bg-[url('https://ai-public.mastergo.com/ai/img_res/15135a9f497dd06bfd991c93ff81babf.jpg')] bg-cover bg-center">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">硕士研究生</h3>
+                            <p class="text-sm opacity-90 mb-4">加入我们的硕士项目，深入研究类脑计算与芯片设计</p>
+                            <button class="bg-primary text-white px-4 py-2 !rounded-button"
+                                onclick="window.location.href = 'admission.html#master';">
+                                了解更多 <i class="fas fa-chevron-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Internship Card -->
+                    <div class="relative w-1/4 h-full group overflow-hidden transition-all duration-500 hover:w-1/2">
+                        <div
+                            class="absolute inset-0 bg-[url('https://ai-public.mastergo.com/ai/img_res/859e00fb4359bf0846e16043c3ba9b31.jpg')] bg-cover bg-center">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">实习机会</h3>
+                            <p class="text-sm opacity-90 mb-4">加入我们的实习项目，获得实践经验并与专家合作</p>
+                            <button class="bg-primary text-white px-4 py-2 !rounded-button"
+                                onclick="window.location.href = 'admission.html#internship';">
+                                了解更多 <i class="fas fa-chevron-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Undergraduate Card -->
+                    <div class="relative w-1/4 h-full group overflow-hidden transition-all duration-500 hover:w-1/2">
+                        <div
+                            class="absolute inset-0 bg-[url('https://ai-public.mastergo.com/ai/img_res/692a91f2f67291df348bb785a57591c6.jpg')] bg-cover bg-center">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">本科生培养</h3>
+                            <p class="text-sm opacity-90 mb-4">加入我们的本科生科研计划，参与前沿芯片技术研究</p>
+                            <button
+                                class="bg-primary text-white px-4 py-2 rounded-button hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white"
+                                onclick="window.location.href = 'admission.html#undergraduate';">
+                                了解更多 <i class="fas fa-chevron-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- 模块 3 -->
-        <div class="card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer flex" onclick="location.href='proceedings'" style="font-size: 1.25rem;">
-            <div class="w-80 h-52 flex-shrink-0 overflow-hidden rounded-lg">
-                <img src="images/perderXX.png" alt="论文封面" class="w-full h-full object-contain rounded-inherit">
-            </div>
-            <div class="p-8 flex-1">
-                <h3 class="text-2xl font-semibold text-gray-900 mb-4">PerturbGen：一个基于种群扰动的硬件测试生成框架</h3>
-                <p class="text-gray-600 text-lg mb-6">本文提出了一个种群扰动的硬件测试生成框架PerturbGen，显著提升处理器验证中的覆盖率。</p>
-                <div class="flex items-center text-lg text-gray-500">
-                    <i class="fas fa-user-circle mr-2"></i>
-                    <span>王静凯...</span>
-                    <span class="mx-2">|</span>
-                    <i class="fas fa-calendar-alt mr-2"></i>
-                    <span>2024-11-20</span>
-                </div>
-            </div>
-        </div>
-        <div class="card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer flex" onclick="location.href='proceedings'" style="font-size: 1.25rem;">
-            <div class="w-80 h-52 flex-shrink-0 overflow-hidden rounded-lg">
-                <img src="images/perderD.png" alt="论文封面" class="w-full h-full object-contain rounded-inherit">
-            </div>
-            <div class="p-8 flex-1">
-                <h3 class="text-2xl font-semibold text-gray-900 mb-4">VToT：通过LLMs使用思维树提示自动生成Verilog</h3>
-                <p class="text-gray-600 text-lg mb-6">本文被IEEE第42届国际计算机设计会议（ICCD 2024）收录，会议于2024年在意大利米兰举行。ICCD是计算机体系结构与设计领域的权威会议，CCF推荐为B类会议。相关代码与提示库已开源。</p>
-                <div class="flex items-center text-lg text-gray-500">
-                    <i class="fas fa-user-circle mr-2"></i>
-                    <span>邓一飞...</span>
-                    <span class="mx-2">|</span>
-                    <i class="fas fa-calendar-alt mr-2"></i>
-                    <span>2024-10-24</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Latest News -->
-<!-- Recruitment Section -->
-<div class="mt-16">
-    <h2 class="text-3xl font-bold text-center mb-12">招生与实习就业</h2>
-    <div class="relative w-full max-w-6xl mx-auto h-[400px] bg-white rounded-xl shadow-lg overflow-hidden">
-    <div class="absolute inset-0 flex">
-    <!-- PhD Card -->
-    <div class="relative w-1/4 h-full group overflow-hidden transition-all duration-500 hover:w-1/2">
-    <div class="absolute inset-0 bg-[url('https://ai-public.mastergo.com/ai/img_res/74b11032711580ce9a2305aa5c3ec6af.jpg')] bg-cover bg-center"></div>
-    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
-    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-    <h3 class="text-xl font-bold mb-2">博士研究生</h3>
-    <p class="text-sm opacity-90 mb-4">加入我们的博士项目，推动类脑计算的前沿研究</p>
-    <button class="bg-primary text-white px-4 py-2 !rounded-button">
-    了解更多 <i class="fas fa-chevron-right ml-1"></i>
-    </button>
-    </div>
-    </div>
-    <!-- Master Card -->
-    <div class="relative w-1/4 h-full group overflow-hidden transition-all duration-500 hover:w-1/2">
-    <div class="absolute inset-0 bg-[url('https://ai-public.mastergo.com/ai/img_res/15135a9f497dd06bfd991c93ff81babf.jpg')] bg-cover bg-center"></div>
-    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
-    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-    <h3 class="text-xl font-bold mb-2">硕士研究生</h3>
-    <p class="text-sm opacity-90 mb-4">加入我们的硕士项目，深入研究类脑计算与芯片设计</p>
-    <button class="bg-primary text-white px-4 py-2 !rounded-button">
-    了解更多 <i class="fas fa-chevron-right ml-1"></i>
-    </button>
-    </div>
-    </div>
-    <!-- Internship Card -->
-    <div class="relative w-1/4 h-full group overflow-hidden transition-all duration-500 hover:w-1/2">
-    <div class="absolute inset-0 bg-[url('https://ai-public.mastergo.com/ai/img_res/859e00fb4359bf0846e16043c3ba9b31.jpg')] bg-cover bg-center"></div>
-    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
-    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-    <h3 class="text-xl font-bold mb-2">实习机会</h3>
-    <p class="text-sm opacity-90 mb-4">加入我们的实习项目，获得实践经验并与专家合作</p>
-    <button class="bg-primary text-white px-4 py-2 !rounded-button">
-    了解更多 <i class="fas fa-chevron-right ml-1"></i>
-    </button>
-    </div>
-    </div>
-    <!-- Undergraduate Card -->
-    <div class="relative w-1/4 h-full group overflow-hidden transition-all duration-500 hover:w-1/2">
-    <div class="absolute inset-0 bg-[url('https://ai-public.mastergo.com/ai/img_res/692a91f2f67291df348bb785a57591c6.jpg')] bg-cover bg-center"></div>
-    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
-    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-    <h3 class="text-xl font-bold mb-2">本科生培养</h3>
-    <p class="text-sm opacity-90 mb-4">加入我们的本科生科研计划，参与前沿芯片技术研究</p>
-    <button class="bg-primary text-white px-4 py-2 !rounded-button">
-    了解更多 <i class="fas fa-chevron-right ml-1"></i>
-    </button>
-    </div>
-    </div>
-    </div>
-    </div>
-<!-- <section>
+        <!-- <section>
   <h2 class="text-3xl font-bold mb-12 text-center">成员</h2>
   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
   <div class="project-card bg-white rounded-lg shadow-lg overflow-hidden cursor-pointer hover:shadow-xl transition-all duration-300" onclick="location.href='teamMember'">
@@ -282,93 +313,61 @@
   </div>
   </div>
   </section> -->
-</main>
-{% include "footer.njk" %}
-<!-- <footer class="bg-gray-900 text-white py-12">
-  <div class="max-w-7xl mx-auto px-4">
-      <div class="grid grid-cols-4 gap-8">
-          <div>
-              <a href="/" class="font-['Pacifico'] text-2xl text-white mb-6 block">logo</a>
-              <p class="text-gray-400">启元脑芯片实验室致力于脑机接口技术研发与创新，打造智能科技未来。</p>
-          </div>
-          <div>
-              <h4 class="text-lg font-semibold mb-4">快速链接</h4>
-              <ul class="space-y-2 text-gray-400">
-                  <li><a href="/" class="hover:text-white">首页</a></li>
-                  <li><a href="news" class="hover:text-white">新闻</a></li>
-                  <li><a href="proceedings" class="hover:text-white">论文集</a></li>
-                  <li><a href="teamMember" class="hover:text-white">成员</a></li>
-                  <li><a href="collaboration" class="hover:text-white">合作</a></li>
-              </ul>
-          </div>
-          <div>
-              <h4 class="text-lg font-semibold mb-4">合作方式</h4>
-              <ul class="space-y-2 text-gray-400">
-                  <li>产学研合作</li>
-                  <li>技术授权</li>
-                  <li>人才培养</li>
-                  <li>项目合作</li>
-              </ul>
-          </div>
-          <div>
-          </div>
-      </div>
-      <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>© 2024 启元脑芯片实验室. 保留所有权利.</p>
-      </div>
-  </div>
-</footer> -->
-<script>
-// Scroll animation for project cards and header
-function checkVisibility() {
-const cards = document.querySelectorAll('.project-card');
-const header = document.getElementById('header');
-const scrollPosition = window.scrollY;
-// Handle project cards visibility
-cards.forEach(card => {
-const rect = card.getBoundingClientRect();
-const isVisible = rect.top <= window.innerHeight - 100;
-if (isVisible) {
-card.classList.add('visible');
-}
-});
-// Handle header background
-if (scrollPosition > 50) {
-header.classList.remove('bg-transparent');
-header.classList.add('bg-white', 'shadow-sm');
-document.querySelectorAll('.nav-link').forEach(link => {
-link.classList.remove('text-white', 'hover:text-white/80');
-link.classList.add('text-gray-700', 'hover:text-primary');
-});
-document.querySelectorAll('.fa-search, .fa-user, .fa-bars').forEach(icon => {
-icon.classList.remove('text-white');
-icon.classList.add('text-gray-600');
-});
-document.querySelectorAll('button').forEach(btn => {
-btn.classList.remove('hover:bg-white/10');
-btn.classList.add('hover:bg-gray-100');
-});
-// document.querySelector('.logo-text').classList.remove('text-white');
-} else {
-header.classList.add('bg-transparent');
-header.classList.remove('bg-white', 'shadow-sm');
-document.querySelectorAll('.nav-link').forEach(link => {
-link.classList.add('text-white', 'hover:text-white/80');
-link.classList.remove('text-gray-700', 'hover:text-primary');
-});
-document.querySelectorAll('.fa-search, .fa-user, .fa-bars').forEach(icon => {
-icon.classList.add('text-white');
-icon.classList.remove('text-gray-600');
-});
-document.querySelectorAll('button').forEach(btn => {
-btn.classList.add('hover:bg-white/10');
-btn.classList.remove('hover:bg-gray-100');
-});
-// document.querySelector('.logo-text').classList.remove('text-white');
-}
-}
-window.addEventListener('scroll', checkVisibility);
-window.addEventListener('load', checkVisibility);
-</script>
+    </main>
+    {% include "footer.njk" %}
+
+    <script>
+        // Scroll animation for project cards and header
+        function checkVisibility() {
+            const cards = document.querySelectorAll('.project-card');
+            const header = document.getElementById('header');
+            const scrollPosition = window.scrollY;
+            // Handle project cards visibility
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                const isVisible = rect.top <= window.innerHeight - 100;
+                if (isVisible) {
+                    card.classList.add('visible');
+                }
+            });
+            // Handle header background
+            if (scrollPosition > 50) {
+                header.classList.remove('bg-transparent');
+                header.classList.add('bg-white', 'shadow-sm');
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('text-white', 'hover:text-white/80');
+                    link.classList.add('text-gray-700', 'hover:text-primary');
+                });
+                document.querySelectorAll('.fa-search, .fa-user, .fa-bars').forEach(icon => {
+                    icon.classList.remove('text-white');
+                    icon.classList.add('text-gray-600');
+                });
+                document.querySelectorAll('button').forEach(btn => {
+                    btn.classList.remove('hover:bg-white/10');
+                    btn.classList.add('hover:bg-gray-100');
+                });
+                // document.querySelector('.logo-text').classList.remove('text-white');
+            } else {
+                header.classList.add('bg-transparent');
+                header.classList.remove('bg-white', 'shadow-sm');
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.add('text-white', 'hover:text-white/80');
+                    link.classList.remove('text-gray-700', 'hover:text-primary');
+                });
+                document.querySelectorAll('.fa-search, .fa-user, .fa-bars').forEach(icon => {
+                    icon.classList.add('text-white');
+                    icon.classList.remove('text-gray-600');
+                });
+                document.querySelectorAll('button').forEach(btn => {
+                    btn.classList.add('hover:bg-white/10');
+                    btn.classList.remove('hover:bg-gray-100');
+                });
+                // document.querySelector('.logo-text').classList.remove('text-white');
+            }
+        }
+        window.addEventListener('scroll', checkVisibility);
+        window.addEventListener('load', checkVisibility);
+    </script>
 </body>
+
 </html>

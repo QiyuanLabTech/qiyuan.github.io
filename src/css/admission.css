@@ -45,3 +45,7 @@
     .tab-content.active {
         display: block;
     }
+    .nav-item.active a {
+        color: #0066cc; /* 高亮颜色 */
+        font-weight: bold;
+    }
