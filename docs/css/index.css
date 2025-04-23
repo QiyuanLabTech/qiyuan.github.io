@@ -59,3 +59,8 @@ body {
     filter: hue-rotate(190deg) saturate(150%) brightness(90%);
     transition: filter 0.3s ease;
 }
+/* 直接在 CSS 中定义 hover 状态 */
+button.bg-primary:hover {
+    background-color: #007bff; /* 设置为你想要的蓝色 */
+    color: white; /* 悬停时文字颜色为白色 */
+}
