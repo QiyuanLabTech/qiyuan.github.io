@@ -201,8 +201,10 @@ function closeModal() {
     document.body.style.overflow = 'auto';
     document.getElementById('modalContent').scrollTop = 0;
 }
-document.getElementById('modal').addEventListener('click', function (e) {
-    if (e.target === this) {
-        closeModal();
-    }
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('modal').addEventListener('click', function (e) {
+        if (e.target === this) {
+            closeModal();
+        }
+    });
 });
